@@ -1,0 +1,121 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 1.9rem;
+  padding: 1rem 5rem;
+  margin: 2rem 3rem 3rem 3rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contenedor {
+  width: 300px;
+  height: 230px;
+  background-color: cadetblue;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+.contenedor img {
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+.contenedor img:hover {
+  transform: scale(1.3);
+}
+
+.galeria {
+  width: 90%;
+  box-sizing: inherit;
+  margin: 2rem 1rem;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+}
+
+.galeria:hover {
+  box-shadow: 0 0 5px white, 0 0 15px white, 0 0 30px white;
+}
+
+.foscuro {
+  background-color: rgb(43, 40, 40);
+}
+
+p {
+  margin: 2rem;
+  column-count: 1;
+}
+
+.clear {
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .galeria {
+    width: 40%;
+    margin: 5px;
+  }
+
+  .contenedor {
+    width: 40%;
+    height: 180px;
+    display: inline-block;
+    margin: 0.8;
+  }
+
+  p {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+  .clear {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-weight: 700;
+    margin: 2rem 2rem;
+  }
+
+  .galeria {
+    width: 20%;
+    padding: 0.5rem;
+  }
+
+  .contenedor {
+    width: 20%;
+    height: 170px;
+    margin: 0.8rem;
+  }
+
+  p {
+    column-count: 3;
+  }
+}

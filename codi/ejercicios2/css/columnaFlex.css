@@ -1,0 +1,42 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+/* *,
+*::before,
+*::after,
+body {
+  margin: 0;
+  padding: 0;
+} */
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  width: 100%;
+  text-align: center;
+}
+
+.masonry {
+  width: 70%;
+  column-count: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .masonry {
+    column-count: 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .masonry {
+    column-count: 3;
+  }
+}

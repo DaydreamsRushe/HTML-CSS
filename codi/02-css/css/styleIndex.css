@@ -1,0 +1,150 @@
+/* 
+Comentarios en CSS */
+
+/*
+regla consta de 2 partes 
+1) selector
+2) bloqie de declaraciones: {
+  atributo: valor;
+  atributo-de-mas-de-dos-palabras: otro-valor;
+  otro-atributo-de-caja: valor valor valor valor;
+}
+
+Selector=etiqueta de html,
+etiquetas o atributos especificos sin valor */
+
+/* reseteo personal para los navegadores */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* Variables  */
+  --violeta: rgb(252, 12, 216);
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  min-height: 100%; /* 100vh */
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/*fin reseteo personal para los navegadores */
+
+small {
+  color: blue;
+  font-size: 22px;
+}
+p {
+  color: #000000;
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px !important; /* el tag !important se salta todas las restricciones */
+  line-height: 1.5;
+}
+/* id */
+#menu {
+  list-style: none;
+}
+
+/* class */
+.parrafo-2 {
+  color: red;
+  font-size: 22px;
+}
+/* aunque small y su clase tengan aspectos contradictorios, predomina el estilo indicado en la clase, ya que es mas especifico. Si tenemos 2 etiquetas iguales (2 small, por ejemplo) la regla que se contradiga mas adelante sera la que predomine (si la clase no influyera, la primera etiqueta indica color azul y un tamaño de letra pero esta ultima se sobreescribira por el tamaño de letra indicada en la segunda etiqueta)*/
+small {
+  font-size: 12px;
+}
+
+.tipo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.strong {
+  font-weight: 900;
+}
+
+/* hijos directos */
+.directos > li {
+  background-color: burlywood;
+}
+/* descendientes */
+.directos strong {
+  color: blueviolet;
+}
+
+/* los hermanos a partir del indicado (despues de el que tenga la clase) quedaran afectados por este estilo */
+.hermanos-general ~ li {
+  background-color: blue;
+}
+/* el siguente hermano con la etiqueta li quedara afectado por este estilo */
+.hermano-adyacente + li {
+  background-color: chartreuse;
+}
+/* atributos y valores */
+.atributos a[href] {
+  font-weight: bolder;
+}
+
+.atributos a[target] {
+  color: red;
+}
+
+.atributos a[target="new"] {
+  color: rgb(13, 235, 69);
+}
+/* enlaces que cuya referencia EMPIEZA con "http://" */
+.atributos a[href^="http://"]
+{
+  color: rgb(243, 215, 11);
+}
+/* enlaces que cuya referencia TERMINA con ".eu" */
+.atributos a[href$=".eu"] {
+  color: rgb(243, 11, 189);
+}
+
+.atributos .opcion {
+  text-decoration: none;
+}
+
+a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+}
+/* pseudoestilos */
+a:visited {
+  color: greenyellow;
+}
+
+a:hover {
+  color: white;
+  background-color: #000000;
+}
+
+a:active {
+  color: red;
+}

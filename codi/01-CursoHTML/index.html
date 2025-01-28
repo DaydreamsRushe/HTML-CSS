@@ -1,0 +1,486 @@
+<!-- los comentarios se pueden definir directamente con Alt+LShift+A -->
+<!--escribiendo "!" o "html:5" gracias a atajos de Emmet-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metaetiquetas de SEO y moviles -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="En esta pagina estamos aprendiendo los fundamentos de HTML">
+    <link rel="canonical" href="http://www.josetesting.byethost24.com">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Metaetiquetas para Redes Sociales -->
+     <!-- facebook 
+     meta property="og:locale"
+     meta property="og:type"
+     meta property="og:title"
+     meta property="og:description"
+     meta property="og:image"
+     meta property="og:url"
+     -->
+     <!-- 
+     <meta property="og:title" content="aprendiendo HTML">
+     <meta property="og:description" content="en esta pagina estamos aprendiendo los fundamentos de HTML">
+     <meta property="og:image" content="https://tudominio.com/img/periodic-table-of-html-elements.png">
+     <meta property="og:url" content="https://tudominio.com/index.html">      
+     -->
+     <!--Twitter
+     meta name="twitter:card"
+     meta name="twitter:title"
+     meta name="twitter:description"
+     meta name="twitter:site"
+     meta name="twitter:image"
+     -->
+     <!-- 
+     <meta name="twitter:card" content="summary">
+     <meta name="twitter:site" content="@usuariotwitter">
+     -->
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script>
+      function abreAlerta()
+      {
+        window.alert("Has apretado un botón");
+      }
+    </script>
+    <title>Aprendizaje con HTML | Inicio</title>
+    
+  </head>
+  <body id="inicio">
+
+
+    <!--www.w3.org/html/
+        www.htmalreference.io
+        html.spec.whatwg.org/
+        www.w3.org/blog/news/archives/7753
+        developer.mozilla.org/es/docs/web/HTML
+        fontello.com/
+        caracteres especiales desarrolloweb.com/articulos/11.php
+        www.w3schools.com 
+        
+    -->
+
+
+    <!--todo texto sin especificar se escribe con el formato por defecto (Teams New Roman 16px)-->
+    texto por defecto
+    <!--Alt+W puede añadir una etiqueta al texto seleccionado y Lshift+alt+down puede duplicar la linea selsccionada-->
+    <p>Hola Mundo!!</p>
+    <p>Hola Mundo!!</p>
+
+    <!--creación de listas escriviendo ul (unordered list) [ul>(li>a)*20 o ul>li*20>a]-->
+    <ul>
+      <li><a href="index.html#encabezados">Encabezados Html</a></li>
+      <li><a href="#basicos">Etiqueta de texto basica</a></li>
+      <li><a href="#semanticos">Etiquetas de Texto Semánticas</a></li>
+      <li><a href="#saltos">Etiquetas de Saltos</a></li>
+      <li><a href="#formateo">Etiquetas de Formateo</a></li>
+      <li><a href="#estructurales">Etiquetas Semánticas Estructurales</a></li>
+      <li><a href="#bloquevslinea">Etiquetas de Bloque VS Etiquetas de Línea</a></li>
+      <li><a href="#estilos">Estilos CSS en HTML</a></li>
+      <li><a href="#scripts">Scripts en HTML</a></li>
+      <li><a href="#imagenes">Imágenes</a></li>
+      <li><a href="">SVG</a></li>
+      <li><a href="#figuras">Figure</a></li>
+      <li><a href="#Lordenadas">Listas Ordenadas</a></li>
+      <li><a href="#LNoordenadas">Listas Desordenadas</a></li>
+      <li><a href="#Ldefinidas">Listas de definicion</a></li>
+      <li><a href="#tablas">Tablas</a></li>
+      <li><a href="#enlaces">Enlaces</a></li>
+      <li><a href="#interactivos">Elementos interactivos</a></li>
+      <li><a href="#audio">Audio y Video</a></li>
+      <li><a href="#iframes">Iframes y marcos flotantes</a></li>
+      <li><a href="#formularios">Formularios</a></li>
+      <li><a href="#data">Data Attributes</a></li>
+      <li><a href="#metaseo">Metaetiquetas para SEO y móviles</a></li>
+      <li><a href="#metaredes">Metaetiquetas para Redes Sociales</a></li>
+      <li><a href="#web">Accesibilidad Web</a></li>
+    </ul>
+    <!--las etiquetas h$ son headers.cada numero escribe en un tamaño menor al anterior y en negrita-->
+    <hr />
+    <div>
+      <h3 id="encabezados">Encabezados Html</h3>
+      <!-- podemos definir una etiqueta con su contenido con {} en este caso h1{Encabezado de nivel 1} con Emmet podemos automatizar el proximo parrafo si excribimos h${Encabezado de nivel $}*6 con Emmet-->
+      <h1>Encabezado de nivel 1 - cada html solo puede tener un H1</h1>
+      <h2>Encabezado de nivel 2</h2>
+      <h3>Encabezado de nivel 3</h3>
+      <h4>Encabezado de nivel 4</h4>
+      <h5>Encabezado de nivel 5</h5>
+      <h6>Encabezado de nivel 6</h6>
+      <br /><!-- esto es un salto de linea -->
+      <a href="#inicio">Ir arriba</a>
+      <!-- con un href podemos ir a un punto de la propia pagina (index.html) y de otras definidas por una etiqueta con id -->
+      <hr />
+    </div>
+    <div>
+      <h3 id="basicos">Etiqueta de texto basica</h3>
+      <!-- p>lorem (texto de relleno dentro de una etiqueta de bloque) -->
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquam
+        odit quae officiis, iusto temporibus atque dignissimos hic consectetur
+        repellat, aperiam sunt animi est earum nesciunt non, ea rem consequuntur?
+      </p>
+      <p>
+        super indice y sub indice E=mc<sup>2</sup>, H<sub>2</sub>0,
+        <mark>marcado de texto</mark>, y <small>texto pequeño</small>
+      </p>
+      <br />
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="semanticos">Etiquetas de Texto Semánticas</h3>
+      <!-- p>strong{Este texto es importante.}+{.}+em{Este texto hace enfasis} -->
+      <p>
+        <strong>Este texto es importante</strong>.
+        <em>Este texto hace enfasis</em>
+      </p>
+      <blockquote>Texto en un bloque</blockquote>
+      <cite>Citaciones</cite>
+      <br />
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="saltos">Etiquetas de Saltos</h3>
+      <p>
+        Lorem ipsum dolor sit amet <br />
+        consectetur adipisicing elit. <br />
+        Dolorem expedita quae iure nam nisi molestias eligendi distinctio. <br />
+        Tempore cum enim tenetur nam, doloribus mollitia labore sapiente debitis,
+        amet ipsum commodi?
+      </p>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="formateo">Etiquetas de Formateo</h3>
+      <p>
+        <pre>Tareas por hacer:
+        - HTML
+        - Terminar las secciones de este curso.
+        - Editar en un sólo Video
+        - CSS
+        - Comenzar CSS
+        - Editar en un sólo Video
+        </pre>
+        <code>
+          Este texto está en formato de código
+        </code>
+        <pre>
+          <code>
+            `import React from "react";        
+             import Title from "./Title";                 
+              function App 
+              {          
+                 return &lt;Title >        
+                   }`
+        
+          </code>
+        </pre>
+      </p>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <!-- h3#estructurales{Etiquetas Semánticas Estructurales} -->
+      <h3 id="estructurales">Etiquetas Semánticas Estructurales</h3>
+      <div>div: etiqueta estrucutural pero no semantica</div>
+      <header>header: Cabecera de un sitio web o de una sección</header>
+      <main>main: Define la sección principal del documento, sólo puede existir una etiqueta main por html</main>
+      <footer>footer: Pié de página de un sitio web o de una sección</footer>
+      <nav>nav: Representa una navegación</nav>
+      <article>article: Representa un contenido dependiente de una seccion(que por sí sola se explica)</article>
+      <aside>aside: Representa contenido complementario o secundario</aside>
+      <section>section: Representa una sección de contenido genérico</section>
+      <address>address: Representa una información de contacto</address>
+      <br />
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="bloquevslinea">Etiquetas de Bloque VS Etiquetas de Línea</h3>
+      <p><div>La etiqueta de bloque por excelencia es la div, una etiqueta de bloque es aquella que genera saltos de línea con sus etiquetas hermanas.</div><span>La etiqueta de línea por excelencia es la span, una etiqueta de línea sólo ocupa el espacio necesario que tiene su contenido.</span><span style="background-color:aqua;">Hola soy otra span</span></p>
+      <br />
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="estilos">Estilos CSS en HTML</h3>
+      <p>Cascasding Style Sheets; Lenguaje de formateo de HTML,
+        No se considera lenguaje de programación, solo de maquetación
+      </p><p>Normalmente se implementa en hojas de estilo externas vinculadas al documento Html. En ocasiones podemos construirlo dentro de la etiqueta <strong>&lt;style></strong> en el head del documento, o en la linea dentro de la etiqueta</p>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="scripts">Scripts en HTML</h3>
+      <p>Para incluir javascript y dar funcionalidades al documento html suaremos la eiqueta <strong>&ltscript></strong>. Esta puede ir en el head del documento o dentro del body. Si incluimos e  el body, es preferible que esté al final del mismo</p><p>La etiqueta <strong>&ltscript></strong> puede contener javascript, o vincular un archivo externo de javascript</p>
+      <button onclick="abreAlerta();">Abrir Alert</button>
+      <br />
+      <h4><span onmouseover="otraAlerta();">Abre otra ventana al pasar por este texto</span></h4>
+      <a href="javascript:window.alert('Otra vez maaaas!!!');">Abrir otra ventana de javascript</a>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="imagenes">Imágenes</h3>
+      <p>En un html podemos utilizar diferentes tipos de imagen dependiendo de su compresión. Sin perdida de calidad: gif y png; o con perdida de calidad como jpg</p>
+      <p>GIF. formato sin perdida con capacidad para comprimir hasta 256 colores, valido para tintas planas, logotipos, etc... acepta animaciones</p>
+      <img src="img/this-is-fine.gif" alt="It's fine" srcset="">
+      <p>PNG-8. Igual a GIF y su ratio de compresión es mejor que la de GIF</p>
+      <img src="img/periodic-table-of-html-elements.png" alt="Taba periodica de Html">
+      <p>JPG. formato perfecto para cuatricomías e imagenes fotograficas, pero tiene perdida de calidad</p>
+      <img src="img/background.jpg" alt="en la nieve">
+      <p>PNG-24. formato perfecto para fotografias y trasparencias a color real, tiene muy poca perdida de calidad</p>
+      <p>SVG. formatio de imagen vectorial sin pérdida y la mas recomendable para logotipos e  iconos</p>
+      <img src="img/gif1.gif" alt="cansa los ojos" srcset="">
+      <img src="img/mozilla-firefox.svg" alt="Logo mozzilla fuegozorro" srcset="">
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="figuras">Figure y Picture</h3>
+      <p>Figure</p>
+      <figure>
+        <img src="img/periodic-table-of-html-elements.png" style="width: 200px;" alt="Tabla periodica de Html">
+        <figcaption>Tabla de elementos de Html</figcaption>
+      </figure>
+      <p>Picture</p>
+      <picture>
+        <source media="(min-width:780px)" srcset="img/img_pink_flowers.jpg">
+        <source media="(min-width:500px)" srcset="img/img_white_flower.jpg">
+        <img src="img/img_orange_flowers.jpg" alt="imagen para dispositivo tipo mobil">
+      </picture>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="Lordenadas">Listas Ordenadas</h3>
+      <ol>
+        <li>opcion 1</li>
+        <li>opcion 2</li>
+        <li>opcion 3</li>
+        <li>opcion 4</li>
+        <li>opcion 5</li>
+      </ol>
+      <ol reversed start="2">
+        <li>opcion 1</li>
+        <li>opcion 2</li>
+        <li>opcion 3</li>
+        <li>opcion 4</li>
+        <li>opcion 5</li>
+      </ol>
+      <ol type="I">
+        <li>opcion 1</li>
+        <li>opcion 2</li>
+        <li>opcion 3</li>
+        <li>opcion 4</li>
+        <li>opcion 5</li>
+      </ol>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="LNoordenadas">Listas Desordenadas</h3>
+      <ul>
+        <li>opcion 1</li>
+        <li>opcion 2</li>
+        <li>opcion 3</li>
+        <li>opcion 4</li>
+        <li>opcion 5</li>
+      </ul>
+      <ul type = "square">
+        <li>opcion 1</li>
+        <li>opcion 2</li>
+        <li>opcion 3</li>
+        <li>opcion 4</li>
+        <li>opcion 5</li>
+      </ul>
+      <ul type = "circle">
+        <li>opcion 1</li>
+        <li>opcion 2</li>
+        <li>opcion 3</li>
+        <li>opcion 4</li>
+        <li>opcion 5</li>
+      </ul>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="Ldefinidas">Listas de definicion</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>es un lenguaje de marcado que define el contenido de la web</dd>
+        <br>
+        <dt>CSS</dt>
+        <dd>es un lenguaje de definicion que da estilos al codigo HTML</dd>
+        <br>
+        <dt>JavaScript</dt>
+        <dd>El lenguaje de la web</dd>
+        <br>
+      </dl>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="tablas">Tablas</h3>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="4">cabecera de columna</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Cabecera de fila 1</th>
+            <td contenteditable>contenido editable</td>
+            <td>contenido de celda</td>
+            <td>contenido de celda</td>
+          </tr>
+          <tr>
+            <th>Cabecera de fila 2</th>
+            <td contenteditable>contenido editable</td>
+            <td>contenido de celda</td>
+            <td>contenido de celda</td>
+          </tr>
+          <tr>
+            <th>Cabecera de fila 3</th>
+            <td contenteditable>contenido editable</td>
+            <td>contenido de celda</td> 
+            <td>contenido de celda</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4" align="left">Resumen de datos</th>
+          </tr>
+        </tfoot>
+      </table>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="enlaces">Enlaces</h3>
+      <p><a href="holamundo.html">Hacia la pagina 'Hola mundo'</a></p>
+      <p><a href="https://emmet.io" target="_blank">Abre una nueva pestaña para ir a Emmet</a></p>
+      <p><a href="holamundo.html" target="pepe">Abre una nueva pestaña (pepe) para ir a 'Hola mundo</a></p>
+      <p><a href="https://google.es" target="new">Abre la pagina de google</a></p>
+      <p><a href="https://www.w3schools.com/html/html_links.asp" target="new">Abre la pagina de tutoriales de links para html</a></p>
+      <p><a href="mailto:jlop9810@gmail.com">enlace a mi correo</a></p>
+      <p><a href="tel:345555555555">Llamada a numero 345555555555</a></p>
+      <p><a href="https://api.whatsapp.com/send?phone=345555555555&text=Hola">Envia un mensaje por watsapp</a></p>
+      <p><a href="media/emmet-cheat-sheet.pdf">Descargar cheat sheet de Emmet</a></p>
+  
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="interactivos">Elementos interactivos</h3>
+      <!-- button es una etiqueta para generar un elemento en el que el usuario puede hacer click con el raton -->
+      <button type="button"onclick="alert('hola holita');">Si haces click aquí te saludo</button>
+      <!-- details nos permite tener estructuras de forma independiente de la aplicación, se utiliza normalmente para abrir y cerrar contenidos -->
+      <details>
+        <summary>Titular del contenido del acordeón</summary>
+        <article>
+          <h4>titulo del articulo</h4>
+          <img src="img/html5.png" alt="">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae sed veritatis consequatur vel vitae aliquam eos quo illo, enim suscipit accusantium earum, doloribus adipisci rem blanditiis perferendis obcaecati in impedit.</p>
+        </article>
+      </details>
+      <details>
+        <summary>Critica de la clase de html</summary>
+        <article>
+          <h4>Vamos lentos</h4>
+          <p>aunque las clases estan bien de por si, el ritmo de esta clase va mas lento de lo que yo quisiera. Me paso muchos momentos de esta mirando el mobil y esperando a que pase a la siguiente seccion, y eso que voy haciendo apuntes y todo. Eso si, va perfecto para aquellos que se van perdiendo, porque lo importante es ir al ritmo del mas lento. Solo espero que nos den caña mas adelante porque, juer...</p>
+        </article>
+      </details>
+      <br>
+      <dialog open>
+        contenido tipo Popup. Podemos abrirlo y cerrarlo con javascript
+      </dialog>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+      <hr />
+    </div>
+    <div>
+      <h3 id="audio">Audio y Video</h3>
+      <p>Las etiquetas de &lt;audio> y &lt;video> nacen con HTML 5, y El API especifico de javascript desarrollado por Mozilla <a href="audio-video/audio_video.html">Ver mas sobre audio y video</a></p>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+    </div>
+    <div>
+      <h3 id="iframes">Iframes y marcos flotantes</h3>
+      <p>El elemento HTML &lt;iframe> (elemento en linea) representa un contexto de navegacion anidado, el cual permite incrustar otra pagina HTML en la pagina actual.</p>
+      <a href="iframes/iframes.html">Descubrir mas de Iframes</a>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+    </div>
+    <div>
+      <h3 id="formularios">Formularios</h3>
+      <p>el elmento &lt;form> permite la recogida de datos para su posterior gestión por lenguajes dinamicos. Dispone de elementos especificos para cada tipo de dato que queramos gestionar</p>
+      <a href="forms/forms.html">Conocer mas de los formularios3</a>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+    </div>
+    <div>
+      <h3 id="data">Data Attributes</h3>
+        <p>El atributo <strong>data</strong> permite disponer de atributos especificos para programación de diferentes lenguajes de programación, especialmente javascript</p>
+        <ul>
+          <figcaption>Estaciones del Año, con data-name de identifiación</figcaption>
+          <li data-id="1" data-name="spring">Primavera</li>
+          <li data-id="2" data-name="summer">Verano</li>
+          <li data-id="3" data-name="autum">Otoño</li>
+          <li data-id="4" data-name="winter">Invierno</li>
+        </ul>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+    </div>
+    <div>
+      <h3 id="metaseo">Metaetiquetas para SEO y móviles</h3>
+      <small>Metaetiquetas situadas em eñ &lt;head> del documento para garantizar posicionamiento web y compatibilidades -Visibles desde el codigo de la cabecera</small>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+    </div>
+    <div>
+      <h3 id="metaredes">Metaetiquetas para Redes Sociales</h3>
+      <p>Metaetiquetas situadas en el &lt;head> del documento para mejorar el posicionamiento y compatibilidad con las redes sociales propias como facebook, y twitter -Visibles en el codigo de cabecera</p>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+    </div>
+    <div>
+      <h3 id="web">Accesibilidad Web</h3>
+      <p>
+        Para garantizar el acceso a la web para personas con diferencias funcionales, HTML incorpora las etiquetas semanticas y atributos especificos para facilitar dicho acceso
+      </p>
+      <h4 role="title">Estaciones del Año, con data-name de identifiación</h4>
+      <ul role="list">  
+        <li tabindex="1" role="listitem">Primavera</li>
+        <li tabindex="2" role="listitem">Verano</li>
+        <li tabindex="3" role="listitem">Otoño</li>
+        <li tabindex="4" role="listitem">Invierno</li>
+      </ul>
+      <a role="link" aria-label="En este enlace encontraras mas información sobre las estaciones del año" href="#" target="new">Mas información</a>
+      <p>
+        https://web.dev/accesible/ <br>
+        https://html5accessibility.com/ <br>
+        https://www.w3.org/blog/news/archives/8889 <br>
+      </p>
+      <br>
+      <a href="#inicio">Ir arriba</a>
+    </div>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let hombres = ["Pablo", "Jose"];
+      console.log(hombres);
+
+      let mujeres = ["Lucia", "Marta", "Sara"];
+      console.log(mujeres);
+      let humanos = hombres.concat(mujeres);
+      let humanas = mujeres.concat(hombres);
+      console.log(humanos);
+      console.log(humanas);
+
+      console.log(hombres.lastIndexOf("Jose"));
+      console.log(humanas.lastIndexOf("Jose"));
+
+      humanos.push("William");
+      console.log(humanos);
+      hombres.push("William");
+      console.log(hombres);
+      console.log(humanos);
+    </script>
+  </body>
+</html>

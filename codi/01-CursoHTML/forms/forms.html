@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Formulaios con HTML 5</title>
+  </head>
+  <body>
+    <h1>Formularios con HTML 5</h1>
+    <h3>Contacta con nosotros</h3>
+    <form
+      action="https://formsubmit.co/jlop9810@gmail.com"
+      method="post"
+      >
+      <fieldset>
+        <legend>Datos personales</legend>
+        <div>
+          <label for="Nombre_apellidos">Nombre y apellidos</label>
+          <input
+            id="nombre"
+            name="nombre"
+            type="text"
+            placeholder="Ejemplo de placeholder"
+            autofocus
+            required
+            pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$"
+          />
+        </div>
+        <div>
+          <label for="telefono">Telefono</label>
+          <input type="text" name="telefono" id="telefono" pattern="\d{9,11}" />
+        </div>
+        <div>
+          <label for="correo">Correo electronico</label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z0-9_]{2,5}"
+            required
+          />
+        </div>
+        <div>
+          <label for="fecha">Fecha de nacimiento</label>
+          <input type="date" name="fecha" id="fecha" />
+        </div>
+        <p>Indica tu sexo</p>
+        <label for="sexo">Hombre</label>
+        <input type="radio" name="sexo" id="sexo" value="Hombre" checked />
+        <label for="sexo">Mujer</label>
+        <input type="radio" name="sexo" id="sexo" value="Mujer" />
+        <label for="sexo">No binario</label>
+        <input type="radio" name="sexo" id="sexo" value="No binario" />
+      </fieldset>
+      <fieldset>
+        <legend>Datos profesionales y preferencias</legend>
+        <div>
+          <label for="idioma">Idioma materno</label>
+          <select name="idioma" id="idioma" required>
+            <option value="" seleced>Elige una opcion</option>
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="it">Italiano</option>
+            <option value="pt">Portugués</option>
+          </select>
+        </div>
+        <div>
+          <label for="lenguajes">Selecciona los lenguajes de programación que conozcas</label>
+          <br>
+          <select name="lenguajes" id="lenguajes" required multiple>
+            <option value="" seleced>Elige una opcion</option>
+            <option value="js">Javascript</option>
+            <option value="py">Python</option>
+            <option value="php">Php</option>
+            <option value="java">Java</option>
+            <option value="c++">C++</option>
+          </select>
+        </div>
+        <div>
+          <p for="hobbies">Aficiones</p>
+          <label for="deportes">Deportes</label>
+          <input type="checkbox" name="deportes" id="deportes" value="deportes" checked />
+          <label for="salud">Salud</label>
+          <input type="checkbox" name="salud" id="salud" value="salud" />
+          <label for="finanzas">Finanzas</label>
+          <input type="checkbox" name="finanzas" id="finanzas" value="finanzas" />
+          <label for="politica">Finanzas</label>
+          <input type="checkbox" name="politica" id="politica" value="politica" />
+          </select>
+        </div>
+        <div>
+          <label for="curriculum">Adjuntanos tu curriculum vitae</label>
+          <br>
+          <input type="file" name="curriculum" id="curriculum" accept=".doc,.pdf,.jpg">
+        </div>
+        <div>
+          <label for="consulta">Explicanos que necesitas</label>
+          <br>
+          <textarea name="consulta" id="consulta"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Gestion de datos</legend>
+        <input type="reset" value="Reestablecer" />
+        <input type="submit" value="Enviar" />
+      </fieldset>
+    </form>
+    <p>
+      <a href="../index.html" target="">Volver a ventana de inicio</a>
+    </p>
+  </body>
+</html>

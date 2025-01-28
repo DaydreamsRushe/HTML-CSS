@@ -1,0 +1,161 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: aqua;
+  flex: 1 1 5%;
+}
+
+.container {
+  flex: 1 1 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: greenyellow;
+  flex: 1 1 20%;
+}
+
+main {
+  background-color: rgb(255, 108, 22);
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+main > section {
+  flex: 1 1 90%;
+}
+
+aside {
+  background-color: rgb(9, 252, 9);
+  flex: 1 1 10%;
+  clear: both;
+}
+
+footer {
+  background-color: greenyellow;
+  flex: 1 1 20%;
+}
+
+article {
+  height: 90%;
+}
+
+.myForm {
+  height: 100%;
+  border: 2px grey solid;
+  border-radius: 1rem;
+  margin: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.myForm > div {
+  width: 90%;
+  margin-right: 20px;
+
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  flex: 1 1 40%;
+}
+
+.message textarea {
+  flex: 5 1 100%;
+}
+
+.message .envio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.message > label {
+  margin-top: 10px;
+}
+
+.envio button {
+  background-color: green;
+  padding: 4px;
+  border-radius: 0.3rem;
+  margin: 10px;
+  color: white;
+}
+
+.envio .borrar {
+  background-color: red;
+}
+
+.contact {
+  flex: 1 1 60%;
+}
+
+.contact > label {
+  margin-top: 10px;
+}
+
+.contact input {
+  border-radius: 0.2rem;
+  flex: 1 1 1%;
+  margin-bottom: 10px;
+  max-height: 30px;
+}
+
+@media screen and (min-width: 1080px) {
+  body {
+    flex-direction: row;
+  }
+
+  main {
+    flex-direction: row;
+    flex: 1 1 50%;
+  }
+
+  .myForm {
+    flex-direction: row-reverse;
+  }
+
+  .message {
+    flex: 1 1 50%;
+    width: 50%;
+  }
+
+  .contact {
+    flex: 1 2 50%;
+    width: 50%;
+  }
+  .message textarea {
+    flex: 0 1 25%;
+    max-width: 100%;
+    overflow: auto;
+  }
+}

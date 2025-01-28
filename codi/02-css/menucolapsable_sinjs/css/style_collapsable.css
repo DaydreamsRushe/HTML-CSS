@@ -1,0 +1,93 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0%;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: chocolate;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.show-menu {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: black;
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+nav ul#menu li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 0 2rem;
+  transition: all 0.5s ease;
+}
+
+nav ul#menu li a:hover {
+  color: blanchedalmond;
+  border-bottom: 2px solid blanchedalmond;
+  background-color: black;
+}
+
+nav ul#menu li a.selected {
+  color: blue;
+  border-top: 2px solid blue;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .show-menu {
+    display: flex;
+    cursor: pointer;
+  }
+  ul {
+    /* display: none; */
+    flex-direction: column;
+    opacity: 0;
+    margin-top: -200px;
+
+    transition: all 0.7s ease;
+  }
+
+  nav {
+    justify-content: flex-start;
+  }
+  input[type="checkbox"]:checked ~ ul {
+    margin: 1rem;
+    margin-left: 2rem;
+    display: block;
+    opacity: 1;
+    animation: opacidad 1s ease;
+  }
+  @keyframes opacidad {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

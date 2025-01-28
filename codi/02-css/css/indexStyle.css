@@ -1,0 +1,157 @@
+/* 
+Comentario en CSS
+
+Regla CSS consta de 2 partes 
+ 1) Selector
+ 2) Bloque de declaraciones: {
+  atributo: valor;
+  atributo-de-mas-dos-palabras: otro-valor;
+  otro-atributo-de-caja:valor valor valor valor;
+}
+  Selector=Etiqueta de html, grupo de etiquetas, o atributos específicos con o sín valor
+
+*/
+
+/* reseteo personal para los navegadores */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  /* Variables  */
+  --violeta: rgb(252, 12, 216);
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  min-height: 100%; /* 100vh */
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/*fin reseteo personal para los navegadores */
+
+small,
+p,
+address,
+.parrafo-2 {
+  color: blue;
+}
+p {
+  color: #040404;
+  background-color: aquamarine;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px !important;
+  line-height: 1.5;
+  padding: 20px;
+}
+small {
+  font-size: 14px;
+}
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 17px;
+}
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24px;
+  color: var(--violeta);
+}
+h4 {
+  color: var(--violeta);
+}
+
+/* id */
+#menu {
+  list-style: none;
+}
+#jerarquia {
+  color: #000;
+}
+/* class */
+.parrafo-2 {
+  font-size: 24px;
+}
+.tipo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.strong {
+  font-weight: 900;
+}
+.color {
+  color: cadetblue;
+}
+.desactivar {
+  pointer-events: none;
+}
+
+/* hijos directos */
+.directos > li {
+  background-color: burlywood;
+}
+/* descendientes  */
+.directos strong {
+  color: rgb(96, 14, 173);
+}
+/* hermanos  */
+.hermano-general ~ li {
+  background-color: blue;
+}
+.hermano-adjacente + li {
+  background-color: rgb(255, 0, 0);
+}
+/* atributos y valores  */
+.atributos a[href] {
+  font-weight: bolder;
+}
+.atributos a[target] {
+  color: red;
+}
+.atributos a[target="new"] {
+  color: rgb(9, 236, 35);
+}
+.atributos a[href^="http://"]
+{
+  color: rgb(255, 153, 0);
+}
+.atributos a[href$=".eu"] {
+  background-color: aquamarine;
+}
+
+/* pseudo-estilos */
+
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+a:active {
+  color: #ff0000;
+}
+h4:hover {
+  display: inline;
+  color: #000;
+  background-color: #71e668;
+}

@@ -1,0 +1,3 @@
+Email=[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}Números=[0-9]{9}\d{9,13}Nombres con carácteres latinos=^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$
+
+letra dni=TRWAGMYFPDXBNJZSQVHLCKE

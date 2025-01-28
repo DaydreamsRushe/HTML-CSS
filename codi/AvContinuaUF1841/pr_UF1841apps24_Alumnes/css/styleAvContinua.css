@@ -1,0 +1,339 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+*,
+*::after,
+*::before,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+}
+
+header {
+  align-self: flex-start;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+
+header > nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: rgb(43, 43, 43);
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  opacity: 80%;
+}
+
+.show-menu {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  cursor: pointer;
+}
+
+#menu {
+  list-style-type: none;
+  margin-top: -200px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#menu li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid black;
+  font-weight: 500;
+  line-height: 2rem;
+  padding: 0 2rem;
+}
+
+#menu li a:hover {
+  color: rgb(117, 117, 117);
+  border-bottom: 2px solid rgb(117, 117, 117);
+}
+
+#menu li a.selected {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+header input[type="checkbox"] {
+  display: none;
+}
+
+header input[type="checkbox"]:checked ~ #menu {
+  margin: 0;
+  margin-left: 1rem;
+  display: block;
+  opacity: 1;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.background-top {
+  width: 100%;
+  min-width: 790px;
+  min-height: 444px;
+  top: 0px;
+  position: absolute;
+  background-image: url(../img/destinos_exoticos.jpg);
+  background-position: top, center;
+  background-size: 100% 100%, contain;
+  text-align: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  z-index: 2;
+}
+
+/* Presentacion */
+
+.presentacion-contenido {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 4;
+  background-image: url(../img/escocia.jpg);
+  background-position: bottom center;
+  background-size: 100% 20%;
+  background-repeat: no-repeat;
+}
+
+.trap {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  padding-top: 60px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background-color: white;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentacion-texto {
+  margin: 0 30px;
+}
+
+.presentacion-texto h2 {
+  justify-self: flex-start;
+  margin: 10px 0;
+}
+
+.presentacion-texto h3 {
+  margin-top: 50px;
+}
+
+.presentacion-texto p {
+  margin: 10px 0;
+}
+
+.presentacion-opciones {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.presentacion-opciones article {
+  width: 250px;
+  margin: 30px;
+}
+
+.presentacion-opciones article h4 {
+  margin-bottom: 20px;
+}
+
+.presentacion-opciones article img {
+  width: 250px;
+  height: 150px;
+}
+
+/* Servicios */
+
+#video-servicios {
+  margin-top: 30px;
+  width: 80%;
+}
+
+/* Productos */
+.productos-fotos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.productos-fotos img {
+  width: 200px;
+  margin: 10px 50px;
+}
+
+/* Oficinas */
+.mapas {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 30px;
+}
+
+.direccion {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+}
+
+.mapas > div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.mapas img {
+  width: 300px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.mapas iframe {
+  align-self: center;
+  width: 700px;
+  height: 400px;
+}
+
+.contactos {
+  align-self: center;
+  width: 90%;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.formulario {
+  width: 100%;
+  background-color: grey;
+}
+
+.campos-formulario {
+  border: none;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.campos-formulario label {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.campos-formulario input {
+  padding: 10px;
+}
+
+.campos-formulario textarea {
+  min-width: 100%;
+  max-width: 100%;
+  height: 100px;
+}
+
+.campos-formulario small {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.formulario-botones {
+  align-self: flex-end;
+}
+
+.formulario-botones input {
+  width: 80px;
+  border: none;
+  border-radius: 0;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.formulario-botones input[type="reset"] {
+  margin-right: 20px;
+}
+
+footer {
+  padding: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer address {
+  align-items: center;
+  color: white;
+}
+
+footer a {
+  transform: rotate(10);
+  color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+  header nav {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .show-menu {
+    display: none;
+  }
+
+  #menu {
+    align-self: center;
+    list-style-type: none;
+    margin-top: 0px;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  #menu li a {
+    border-bottom: 2px solid rgb(43, 43, 43);
+  }
+}

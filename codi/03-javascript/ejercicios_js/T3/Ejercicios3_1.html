@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Ejercicios T3-1</title>
+  </head>
+  <body>
+    <main class="container-fluid pt-5">
+      <h1 class="mb-5">Ejercicios Javascript 3</h1>
+      <!--  Ejercicio 1 -->
+      <h2>Ejercicio 1</h2>
+      <p>
+        Crea un html que por medio de una fucion te pida un numero por campo de
+        texto y te diga si es numero par o impar
+      </p>
+      <div class="mb-3">
+        <label for="numero" class="from-label">Escribe un numero</label>
+        <input
+          type="text"
+          id="numero"
+          name="numero"
+          class="form-control mb-5"
+          value=""
+        />
+      </div>
+      <div id="mostra1" role="alert" value=""></div>
+      <div>
+        <button class="btn btn-primary" id="btn_ejer1">
+          Ejecutar Ejerccio
+        </button>
+        <button class="btn btn-warning" id="btn_limpiar1">
+          Limpiar ejercicio
+        </button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 2</h2>
+      <p>
+        Escriu un html que et demani per funció i des d'un camp de text, el
+        resultat de dividir 144/12. Aquest resultat es calcula en una altra
+        funció i recollit en aquesta primera per deixar passar l'usuari o no
+        segons la resposta. Crea un botó per esborrar les dades
+      </p>
+      <div class="mb-3">
+        <label for="dividendo" class="from-label"
+          >Escribe el resultado de 144/12</label
+        >
+        <input
+          type="text"
+          id="dividendo"
+          name="dividendo"
+          class="form-control mb-5"
+          value=""
+        />
+      </div>
+      <div id="mostra2" role="alert" value=""></div>
+      <div>
+        <button class="btn btn-primary" id="btn_ejer2">
+          Ejecutar Ejerccio
+        </button>
+        <button class="btn btn-warning" id="btn_limpiar2">
+          Limpiar ejercicio
+        </button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 3</h2>
+      <p>
+        Escriviu un html que demani preu sense iva, després l'iva i et retorni
+        el valor del producte amb iva, tot això amb camps de text i una funció.
+        Crea un botó per esborrar les dades
+      </p>
+      <div class="mb-3">
+        <label for="precio" class="from-label">Escribe un precio sin iva</label>
+        <input
+          type="text"
+          id="precio"
+          name="precio"
+          class="form-control mb-5"
+          value=""
+        />
+        <label for="iva" class="from-label">Escribe un precio sin iva</label>
+        <input
+          type="text"
+          id="iva"
+          name="iva"
+          class="form-control mb-5"
+          value=""
+        />
+      </div>
+      <div id="mostra3" role="alert" value=""></div>
+      <div>
+        <button class="btn btn-primary" id="btn_ejer3">
+          Ejecutar Ejerccio
+        </button>
+        <button class="btn btn-warning" id="btn_limpiar3">
+          Limpiar ejercicio
+        </button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 4</h2>
+      <p>
+        Escriu un programa que demani un primer número, ens permeti triar un
+        select: suma, resta, multiplica, divideix, o mòdul, després ens demani
+        un segon número i ens doni el resultat de l'operació seleccionada. Tot
+        això amb camps de text i select.
+      </p>
+      <div class="mb-3">
+        <label for="factor1" class="from-label">Dame un primer numero</label>
+        <input
+          type="text"
+          id="factor1"
+          name="factor1"
+          class="form-control mb-5"
+          value=""
+        />
+        <label for="operacion" class="from-label"
+          >Selecciona una operacion</label
+        >
+        <select name="operacion" id="operacion">
+          <option value="">--Escoje una operacion--</option>
+          <option value="suma">+</option>
+          <option value="resta">-</option>
+          <option value="multiplicacion">*</option>
+          <option value="division">/</option>
+          <option value="modulo">%</option>
+        </select>
+        <label for="factor2" class="from-label">Dame un segundo numero</label>
+        <input
+          type="text"
+          id="factor2"
+          name="factor2"
+          class="form-control mb-5"
+          value=""
+        />
+      </div>
+      <div id="mostra4" role="alert" value=""></div>
+      <div>
+        <button class="btn btn-primary" id="btn_ejer4">
+          Ejecutar Ejerccio
+        </button>
+        <button class="btn btn-warning" id="btn_limpiar4">
+          Limpiar ejercicio
+        </button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 5</h2>
+      <p>
+        Crea un nou document HTML que ens demani un nombre d'etiquetes a
+        imprimir, i les imprimiu a la pàgina un llistat dels codis d'un producte
+        inventat… codi_producte 0 , codi_producte 1……
+      </p>
+      <div class="mb-3">
+        <label for="impresiones" class="from-label"
+          >¿Cuantas veces imprimo mierdas?</label
+        >
+        <input
+          type="text"
+          id="impresiones"
+          name="impresiones"
+          class="form-control mb-5"
+          value=""
+        />
+      </div>
+      <div id="mostra5" role="alert" value=""></div>
+      <div>
+        <button class="btn btn-primary" id="btn_ejer5">
+          Ejecutar Ejerccio
+        </button>
+        <button class="btn btn-warning" id="btn_limpiar5">
+          Limpiar ejercicio
+        </button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 6</h2>
+      <p>
+        Crea un nou document HTML amb una funció que ens mostri l'amplada de
+        pantalla, alt de pantalla, amplada útil, alt útil, profunditat de color
+        i diagonal de pantalla en píxels i ens ho mostri en un div en accionar
+        un hiperenllaç.
+      </p>
+      <div class="mb-3">
+        <a href="#mostra6" id="windata">Dame esos datoshhhh</a>
+      </div>
+      <div id="mostra6" role="alert" value=""></div>
+      <div>
+        <button class="btn btn-warning" id="btn_limpiar6">
+          Limpiar ejercicio
+        </button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 7</h2>
+      <p>
+        A partir del mètode bgColor del document, construeix una funció que en
+        carregar un html permeti en un select, seleccionar un color de quatre i
+        amb un botó que rasigni a la pàgina aquest color de fondo.
+      </p>
+      <div class="mb-3">
+        <select name="backcolor" id="backcolor">
+          <option value="">--Escoje un color--</option>
+          <option value="red">rojo</option>
+          <option value="blue">azul</option>
+          <option value="yellow">amarillo</option>
+          <option value="green">verde</option>
+        </select>
+      </div>
+      <div id="mostra7" role="alert" value="">cambiame el color</div>
+      <div>
+        <button class="btn btn-warning" id="btn_color7">cambiar color</button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 8</h2>
+      <p>
+        Escriu un html que permeti obrir des d'un botó, una finestra controlada
+        des de javascript, escrivint l'html necessari per mostrar un text amb
+        les propietats utilitzades i un botó que permeti tancar la nova
+        finestra.
+      </p>
+      <div class="mb-3"></div>
+      <div id="mostra8" role="alert" value="">cambiame el color</div>
+      <div>
+        <button class="btn btn-warning" id="btn_abrete8">
+          abre la ventana
+        </button>
+        <button class="btn btn-warning" id="btn_cierrate8">
+          cierra la ventana
+        </button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 9</h2>
+      <p>
+        Escriu un html que demani per control de text una frase, guarda-la com
+        un objecte String i per mitjà d’una funció ens dirà el número de
+        caràcters escrits, que el re-escrigui en cursiva, en negreta, en color
+        vermell, a una mida molt gran, i finalment titllada.
+      </p>
+      <div class="mb-3">
+        <label for="long" class="from-label">escribe lo que sea</label>
+        <input
+          type="text"
+          id="long"
+          name="long"
+          class="form-control mb-5"
+          value=""
+        />
+      </div>
+      <div id="mostra9" role="alert" value="">cambiame el color</div>
+      <div>
+        <button class="btn btn-warning" id="btn9">cuenta caracteres</button>
+      </div>
+      <hr />
+      <h2 class="mb-5">Ejercicio 10</h2>
+      <p>
+        Crea un programa amb una funció que permeti encendre i apagar una
+        bombeta que se us dona amb dos imatges, una enceça i altra apagada has
+        de trobar 3 maneres diferents de control·lar la bombeta
+      </p>
+      <div class="mb-3">
+        <img src="img/apagada.gif" alt="" id="bombilia" />
+      </div>
+      <div id="mostra10" role="alert" value="">cambiame el color</div>
+      <div>
+        <button class="btn btn-warning" id="btn10">cuenta caracteres</button>
+      </div>
+      <hr />
+    </main>
+    <script src="js/parimpar.js"></script>
+    <script src="js/division.js"></script>
+    <script src="js/iva.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/iteraciones.js"></script>
+    <script src="js/windata.js"></script>
+    <script src="js/bgcolor.js"></script>
+    <script src="js/window.js"></script>
+    <script src="js/lentgth.js"></script>
+    <script src="js/bombilla.js"></script>
+  </body>
+</html>

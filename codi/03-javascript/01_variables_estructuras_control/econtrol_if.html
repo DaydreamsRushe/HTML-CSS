@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estructura If..... else if..... else</title>
+  </head>
+  <body>
+    <script>
+      function salir() {
+        location.replace("https://www.w3schools.com");
+      }
+
+      let num1 = 10;
+      let num2 = prompt("Introduce un numero");
+      console.log(typeof num2);
+      num = Number(num2);
+      console.log(typeof num);
+      let result = num1 + num;
+      if (result > 20) {
+        alert(
+          result +
+            " Es el resultado de sumar " +
+            num1 +
+            " y " +
+            num +
+            " y es mayor que 20"
+        );
+      } else if (result == 20) {
+        alert(
+          result +
+            " Es el resultado de sumar " +
+            num1 +
+            " y " +
+            num +
+            " y es igual a 20"
+        );
+      } else if (result < 20) {
+        alert(
+          result +
+            " Es el resultado de sumar " +
+            num1 +
+            " y " +
+            num +
+            " y es menor que 20"
+        );
+      } else {
+        alert("no se que has hecho pero la cagaaaaaaaste");
+      }
+      let salirono = confirm("quiere salir del juego?");
+      if (!salirono) {
+        location.reload();
+      } else {
+        salir();
+      }
+    </script>
+  </body>
+</html>

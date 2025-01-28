@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+      <meta charset="UTF-8">
+      <title>Layout First Mobile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <style type="text/css">
+            *,
+            html {
+                  margin: 0;
+                  box-sizing: border-box;
+            }
+
+            body {
+                  display: flex;
+                  min-height: 100vh;
+                  flex-flow: column;
+            }
+
+            #main {
+                  flex-grow: 1;
+                  display: flex;
+                  flex-flow: column;
+            }
+
+            header,
+            footer {
+                  background: yellow;
+                  height: 20vh;
+            }
+
+            header,
+            nav,
+            footer,
+            aside,
+            article {
+                  padding: 5vh 5vw;
+            }
+
+
+
+            #main>nav,
+            #main>aside {
+                  background: olive;
+            }
+
+            #main>article {
+                  flex-grow: 3;
+                  display: flex;
+                  flex-flow: column;
+            }
+
+            #main>article>#verde {
+                  background: yellowgreen;
+                  padding: 1vh 1vw;
+                  flex-grow: 1;
+            }
+
+            #main>article>#azul {
+                  background: steelblue;
+                  padding: 1vh 1vw;
+            }
+
+            @media screen and (min-width: 768px) {
+                  #main {
+                        flex-flow: row;
+                  }
+
+                  #main>nav,
+                  #main>aside {
+                        flex: 0 0 20vw;
+                  }
+
+            }
+      </style>
+</head>
+
+<body>
+      <header>Header</header>
+      <div id="main">
+            <nav>Nav</nav>
+            <article>
+                  Article
+                  <div id="verde">article 1</div>
+                  <div id="azul">article 2</div>
+            </article>
+            <aside>Aside</aside>
+      </div>
+      <footer>Footer</footer>
+
+</body>
+
+</html>

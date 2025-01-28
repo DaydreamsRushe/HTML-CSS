@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crear elementos con atributos</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+
+  <body>
+    <main class="w3-container">
+      <h2>Crear elementos con el DOM</h2>
+      <p>posicion:</p>
+      <input type="number" id="posicion" />
+      <p>texto a incluir:</p>
+      <input type="text" id="valor" />
+      <input id="crear" type="button" value="Crear" />
+      <div id="contenedorPadre"></div>
+      <script>
+        const posicion = document.getElementById("posicion");
+        const texto = document.getElementById("valor");
+        const padre = document.getElementById("contenedorPadre");
+
+        const crearParrafos = () => {
+          let pos = posicion.value;
+          let text = texto.value;
+          let hijos = padre.children.length;
+          let elementoNodo = document.createElement("p");
+          let nodoTexto = document.createTextNode(text);
+          let id = hijos + 1;
+          elementoNodo.appendChild(nodoTexto);
+          elementoNodo.setAttribute("id", id);
+
+          if (hijos === 0 && text != "") {
+            padre.appendChild(elementoNodo);
+          } else if (text === "") {
+            alert("introduce un texto");
+            document.querySelector("#valor").focus();
+          } else {
+            if (pos) {
+              if (pos <= hijos) {
+                for (let i = 0; i < hijos; i++) {
+                  if (i === pos + 1) {
+                    let actual = document.querySelector(padre.children[1]);
+                    padre.insertBefore(elementoNodo, actual);
+                  }
+                }
+              } else if (parseInt(parseInt(pos) - hijos) <= 1) {
+                padre.appendChild(elementoNodo);
+              }
+            }
+          }
+        };
+
+        const crear = document.getElementById("crear");
+        crear.addEventListener("click", crearParrafos);
+      </script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="mostra"></div>
+    <script>
+      let result;
+      num_1 = Number(prompt("Introduce un numero del 1 al 30"));
+      switch (
+        num_1 //valor a comparar
+      ) {
+        case 10:
+          result = `${num_1} vale 10`;
+          break;
+        case 20:
+          result = `${num_1}  vale 20`;
+          break;
+        case 30:
+          result = `${num_1}  vale 30")`;
+          break;
+        default:
+          result = `${num_1} no vale 10,20 ni 30`;
+      }
+      document.querySelector("#mostra").innerHTML = result;
+    </script>
+  </body>
+</html>

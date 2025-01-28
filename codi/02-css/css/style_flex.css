@@ -1,0 +1,184 @@
+:root {
+  font-family: "Montserrat" sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+*,
+*::before,
+*::after,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1.5rem;
+}
+
+header,
+main,
+footer {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.92rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+p {
+  margin: 1.5rem;
+}
+.cambioCaja {
+  text-transform: lowercase;
+}
+
+.cambioCaja span {
+  text-transform: uppercase;
+}
+
+.contenedor {
+  background-color: aqua;
+  display: flex;
+  flex-flow: row wrap;
+  height: 600px;
+}
+
+.elemento {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+  background-color: burlywood;
+}
+
+.contenedor2 {
+  background-color: rgb(184, 248, 184);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.element {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+  background-color: rgb(255, 217, 0);
+}
+
+.contenedor3 {
+  background-color: blue;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  overflow: auto;
+}
+
+.elemen {
+  text-align: center;
+  width: 100px;
+
+  margin: 0.5rem;
+  background-color: brown;
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+.uno {
+  line-height: 5rem;
+  font-size: 3rem;
+}
+
+.dos {
+  padding-top: 1.5rem;
+  line-height: 3rem;
+  font-size: 3rem;
+}
+
+.contenedor4 {
+  background-color: brown;
+  height: 600px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+.eleme {
+  text-align: center;
+  width: 100px;
+  /* height: 100px; */
+  margin: 0.5rem;
+  background-color: antiquewhite;
+  font-size: 1.8rem;
+  line-height: 4rem;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: aqua;
+  color: white;
+  width: 100px;
+  margin: 0.5rem;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+div.orden {
+  background-color: red;
+  order: 1; /* los elementos tienen por defecto orden 0, si le añadimos un orden se posicionaran respecto al orden que posean y el orden que tienen los demas. En este caso, un orden 1 lo posicionará al final de todo */
+}
+div.orden2 {
+  background-color: black;
+  order: -1; /* al definir este elemento como orden=2, se situará delante del elemento anterior. Esto tambien funciona con numeros negativos*/
+}
+
+div.grow {
+  flex-grow: 1;
+  background-color: red;
+}
+
+div.grow2 {
+  flex-grow: 2;
+  background-color: black;
+}
+
+div.shrink {
+  flex-shrink: 2; /* en este caso el valor por defecto es 1 */
+  background-color: red;
+}
+
+div.shrink2 {
+  flex-shrink: 4;
+  background-color: black;
+}
+
+.basis {
+  flex-basis: 350px;
+}
+
+div.paraladiv2 {
+  flex: 0 3 200px;
+}
+div.paraladiv3 {
+  background-color: greenyellow;
+  flex: 3 1 200px;
+}

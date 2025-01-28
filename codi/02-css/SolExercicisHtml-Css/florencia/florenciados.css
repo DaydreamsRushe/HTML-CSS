@@ -1,0 +1,72 @@
+@charset "utf-8";
+*,
+*::before,
+*::after,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Tahoma", sans-serif;
+  font-size: 16px;
+  background-color: #bfc1b0;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 30px;
+}
+
+p {
+  font-size: 12px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+h1 {
+  letter-spacing: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #191970;
+  text-align: right;
+  padding: 10px;
+}
+
+h2 {
+  background-color: #5b6135;
+  color: #fff;
+  margin: 15px 0;
+  clear: both;
+  font-size: 15px;
+  padding-bottom: 2px;
+}
+
+strong {
+  font-style: oblique;
+}
+
+img {
+  max-width: 150px;
+}
+
+.izq {
+  float: left;
+  margin: 0 20px 5px 0;
+}
+
+.der {
+  float: right;
+  margin: 0 0 5px 20px;
+}
+.centrado img {
+  margin: auto;
+  display: block;
+}
+address {
+  font-size: 10px;
+  font-style: oblique;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Audio y Video con HTML 5</title>
+  </head>
+  <body>
+    <h1>Audio y video con HTML 5</h1>
+    <h3>Audio</h3>
+    <!-- Audio de forma tradicional -->
+    <audio controls>
+      <source
+        src="../media/HakunaMatataItMeansNoWorries.ogg"
+        type="audio/ogg"
+      />
+      <source
+        src="../media/HakunaMatataItMeansNoWorries.ogg"
+        type="audio/mpeg"
+      />
+    </audio>
+    <audio
+      src="../media/HakunaMatataItMeansNoWorries.ogg"
+      type="audio/mpeg"
+      controls
+    ></audio>
+    <h3>Video</h3>
+    <video id="musicos" poster="../img/musicos.jpg">
+      <source src="../media/musics.mp4" type="video/mp4" />
+      <source src="../media/musics.ogv" type="video/ogg" />
+    </video>
+    <button onclick="playStopVideo();">Play/Pause</button>
+    <button onclick="fat();">Big</button>
+    <button onclick="smol();">Small</button>
+    <button onclick="normie();">Normal</button>
+
+    <p>
+      <a href="../index.html" target="">Volver a ventana de inicio</a>
+    </p>
+    <script src="../js/javascript.js"></script>
+  </body>
+</html>

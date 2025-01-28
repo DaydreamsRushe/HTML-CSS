@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables y Estructuras de control Js</title>
+  </head>
+  <body>
+    <script>
+      var hola = "Hola mundo";
+      let hello = "hello world";
+      console.log(hola); //estos dos apareceran en los logs
+      console.log(hello);
+      console.log(window.hola); //este aparecera en el log
+      console.log(window.hello); //este saldra como "undefined"
+      function testVar() {
+        console.log(hola + " con testVar");
+        if (hola) {
+          hola = 800;
+          console.log(hola + " con testVar");
+        }
+      }
+      testVar();
+      console.log(hola + " fuera de testVar");
+
+      function testLet() {
+        console.log(hello + " con testLet");
+        if (hello) {
+          let hello = 800;
+          console.log(hello + " con testLet");
+        }
+      }
+      testLet();
+      console.log(hello + " fuera de testLet");
+    </script>
+    <script src="js/app1.js"></script>
+    <script src="js/app2.js"></script>
+  </body>
+</html>
