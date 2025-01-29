@@ -48,20 +48,23 @@
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet,
         consectetuer adipiscing elit. Duis scelerisque.</p>
    <script>
-    let id, enlace, param;
+    const enlace = document.querySelectorAll("a");
+    let id, param;
 
     const muestraOculta = (param)=>{
       id = document.getElementById("contenidos_"+param);
-      enlace = document.querySelectorAll("a");
-      if (id.style.display ===""|| id.style.display==="block"){
+      let link = document.getElementById("enlace_" + param);
+      if (id.style.display == ""|| id.style.display== "block"){
         id.style.display = "none";
+        link.innerHTML = "Mostrar contenido"
       }else {
         id.style.display = "block";
+        link.innerHTML = "Ocultar contenido"
       }
     };
 
     window.addEventListener("load",()=>{
-      enlace = document.querySelectorAll("a");
+      /* enlace = document.querySelectorAll("a"); */
       id = document.getElementById("contenidos_" + param);
       for (let i=0;i<enlace.length;i++){
         enlace[i].onclick=function () {
