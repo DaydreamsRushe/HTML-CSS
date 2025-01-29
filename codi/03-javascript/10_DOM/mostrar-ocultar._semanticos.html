@@ -47,7 +47,34 @@
         quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper,
         odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet,
         consectetuer adipiscing elit. Duis scelerisque.</p>
-   
+   <script>
+    let id, enlace, param;
+
+    const muestraOculta = (param)=>{
+      id = document.getElementById("contenidos_"+param);
+      enlace = document.querySelectorAll("a");
+      if (id.style.display ===""|| id.style.display==="block"){
+        id.style.display = "none";
+      }else {
+        id.style.display = "block";
+      }
+    };
+
+    window.addEventListener("load",()=>{
+      enlace = document.querySelectorAll("a");
+      id = document.getElementById("contenidos_" + param);
+      for (let i=0;i<enlace.length;i++){
+        enlace[i].onclick=function () {
+          param = enlace[i].id;
+          if(this.id == param){
+            param = param.substring(7,8);
+            muestraOculta(param);
+          }
+        }
+      }
+    });
+
+   </script>
 </body>
 
 </html>
