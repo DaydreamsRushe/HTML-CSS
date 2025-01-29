@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/formulari.css" />
+    <title>Formulario T4</title>
+  </head>
+  <body>
+    <main>
+      <h1>Ejercicio T4: Formulario y Eventos</h1>
+      <p>
+        - Utilitzeu JavaScript per gestionar els formularis i els seus valors.
+        <br />
+        - Utilitzar galetes per emmagatzemar informació.
+      </p>
+      <form
+        method="get"
+        id="firstContact"
+        name="firstContact"
+        action="https://dominio.com/envio.php"
+        onsubmit="return valida();"
+      >
+        <article id="usuario">
+          <label for="nombre">Usuario:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="form-control"
+            value=""
+          />
+        </article>
+        <article id="telefono">
+          <label for="telef">Telefono:</label>
+          <input
+            type="text"
+            id="telef"
+            name="telef"
+            class="form-control"
+            value=""
+          />
+        </article>
+        <article class="nacimiento">
+          <span>Nacimiento</span>
+          <label for="dia">dia:</label>
+          <input
+            type="text"
+            id="dia"
+            name="dia"
+            class="form-control"
+            value=""
+          />
+          <label for="mes">mes:</label>
+          <input
+            type="text"
+            id="mes"
+            name="mes"
+            class="form-control"
+            value=""
+          />
+          <label for="ano">Año:</label>
+          <input
+            type="text"
+            id="ano"
+            name="ano"
+            class="form-control"
+            value=""
+          />
+        </article>
+        <article class="email">
+          <label for="correo">Email:</label>
+          <input
+            type="text"
+            id="correo"
+            name="correo"
+            class="form-control"
+            value=""
+          />
+        </article>
+        <article class="dni">
+          <label for="identif">DNI:</label>
+          <input
+            type="text"
+            id="identif"
+            name="identif"
+            class="form-control"
+            value=""
+          />
+        </article>
+        <article class="acepta">
+          <label for="condiciones">Acepto las condiciones</label>
+          <input type="checkbox" id="condiciones" name="condiciones" required />
+        </article>
+        <div class="control">
+          <button type="submit" name="btn_registo" id="btn_registo">
+            Regístrate
+          </button>
+          <button type="button" name="btn_limpiar" id="btn_limpiar">
+            Limpia el formulario
+          </button>
+          <button type="button" name="btn_guardar" id="btn_guardar">
+            Guardar datos
+          </button>
+          <button type="button" name="btn_recuperar" id="btn_recuperar">
+            Recuperar datos
+          </button>
+        </div>
+        <textarea id="informe" name="informe" value=""></textarea>
+      </form>
+    </main>
+    <script src="js/formulari.js"></script>
+  </body>
+</html>
