@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <title>Métodos con Arrays</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <script>
+      function recorroArray() {
+        let recorro = [10, "20", true, "texto", 50, 60];
+        //bucle for, o while, o do while, óptimos para arrays, itera por índice numérico.
+        console.time("for");
+        document.write("For <br>");
+        for (let i = 0; i < recorro.length; i++) {
+          console.log("Indice:" + i + "Valor:" + recorro[i]);
+          document.write("Índice: " + [i] + "  Valor: " + recorro[i] + "<br>");
+        }
+        console.timeEnd("for");
+        //for in, recorre arrays, propiedades de objetos y objetos, itera sobre los índices y nombres de propiedades
+        console.time("forin");
+        document.write("For in <br>");
+        for (let x in recorro) {
+          console.log("Indice" + x + " Valor:" + recorro[x]);
+          document.write("Indice: " + [x] + "  Valor: " + recorro[x] + "<br>");
+        }
+        console.timeEnd("forin");
+        //for of arrays, no objetos por índice numérico pero sólo por los valores
+        console.time("forof");
+        document.write("For of <br>");
+        for (let y of recorro) {
+          //solo devuelve el valor
+          console.log("Indice: " + y + "  Valor:" + y);
+          document.write("Indice: " + y + "  Valor: " + y + "<br>");
+        }
+        console.timeEnd("forof");
+        document.write("For each<br>");
+        //foreach itera por arrays, accede sólamente a los valores y  permite llamar funciones a ejecutar
+        console.time("forEach");
+        recorro.forEach((element) => {
+          document.write("Indice: " + element + "  Valor: " + element + "<br>");
+          console.log(element);
+        });
+        console.timeEnd("forEach");
+      }
+    </script>
+    <div onclick="recorroArray();">Muestra el array recorrido</div>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <main class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h2>Ejercicio de validación con el API de JAVASCRIPT</h2>
+          <p>
+            Escriu un programa que demani un primer número, ens permeti triar
+            d'un select: suma, resta, multiplica, divideix, o mòdul, després ens
+            demani un segon número i ens doni el resultat de l'operació
+            seleccionada. Tot això amb camps de text i select.
+          </p>
+        </div>
+      </div>
+      <div class="needs-validation" novalidation id="validacion_ejer">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="mb-3">
+              <label for="input_numero1" class="form-label"
+                >Introduce el primer número</label
+              >
+              <input
+                type="number"
+                step="0.1"
+                class="form-control"
+                id="input_numero1"
+                name="input_numero1"
+                min="1"
+                max="99999999"
+                pattern="^\d+(,\d{1,2})?$"
+                required
+              />
+              <div class="valid-feedback">Número correcto</div>
+              <div class="invalid-feedback">
+                Debes de introducir un número correcto entre 1 y 99999999
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="mb-3">
+              <label for="input_numero2" class="form-label"
+                >Introduce el segundo número</label
+              >
+              <input
+                type="number"
+                step="0.1"
+                class="form-control"
+                id="input_numero2"
+                name="input_numero2"
+                min="1"
+                max="99999999"
+                pattern="^\d+(,\d{1,2})?$"
+                required
+              />
+              <div class="valid-feedback">Número correcto</div>
+              <div class="invalid-feedback">
+                Debes de introducir un número correcto entre 1 y 99999999
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="mb-3">
+              <label for="operacionarealizar" class="form-label"
+                >Operación a realizar</label
+              >
+              <select
+                class="form-select"
+                id="operacionarealizar"
+                name="operacionarealizar"
+                required
+              >
+                <option selected disabled value="">Elige una operación</option>
+                <option value="sumar">Sumar</option>
+                <option value="restar">Restar</option>
+                <option value="multiplicar">Multiplicar</option>
+                <option value="dividir">Dividir</option>
+                <option value="modulo">Hacer el módulo</option>
+              </select>
+              <div class="valid-feedback">Operación seleccionada correcta</div>
+              <div class="invalid-feedback">Selecciona una opción válida</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div id="mostra4"></div>
+            <div class="mb-3">
+              <button class="btn btn-primary" id="btn_ejer">
+                Ejecutar Ejercicio
+              </button>
+              <button type="reset">Limpia el desastre</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      const btn_ejer = document.querySelector("#btn_ejer");
+      const input_numero1 = document.querySelector("#input_numero1");
+      const input_numero2 = document.querySelector("#input_numero2");
+      const operacionarealizar = document.querySelector("#operacionarealizar");
+      const mostra4 = document.querySelector("#mostra4");
+      const validacion_ejer4 = document.querySelector("#validacion_ejer");
+
+      btn_ejer.addEventListener("click", () => {
+        validacion_ejer.classList.add("was-validated");
+        mostra4.innerHTML = "";
+
+        if (
+          input_numero1.checkValidity() &&
+          input_numero2.checkValidity() &&
+          operacionarealizar.checkValidity()
+        ) {
+          console.log("todo bien");
+          let numero1 = Number(input_numero1.value);
+          let numero2 = Number(input_numero2.value);
+          let operacion = operacionarealizar.value;
+          let resultado = 1;
+
+          switch (operacion) {
+            case "sumar":
+              resultado = numero1 + numero2;
+              break;
+            case "restar":
+              resultado = numero1 - numero2;
+              break;
+            case "multiplicar":
+              resultado = numero1 * numero2;
+              break;
+            case "dividir":
+              resultado = numero1 / numero2;
+              break;
+            case "modulo":
+              resultado = numero1 % numero2;
+              break;
+            default:
+              resultado = 0;
+          }
+
+          let salida_html = `<div class="alert alert-info text-center" role="alert">
+            El primer número introducido es: <span class="fw-bold"> ${numero1} </span> , el segundo número introducido es: <span class="fw-bold"> ${numero2} </span> y la operación que quieres realizar es: <span class="fw-bold"> ${operacion} </span>  <br> El resultado es: <span class="fw-bold">${resultado} ${resultado.toFixed(
+            2
+          )}  </span>
+            </div>`;
+          mostra4.innerHTML = salida_html;
+
+          validacion_ejer4.classList.remove("was-validated");
+          input_numero1.value = "";
+          input_numero2.value = "";
+          operacionarealizar.selectedIndex = 0;
+        }
+      });
+    </script>
+  </body>
+</html>

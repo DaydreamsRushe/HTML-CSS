@@ -28,7 +28,9 @@
             id="nombre"
             name="nombre"
             class="form-control"
+            placeholder="inputNombre"
             value=""
+            pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$"
           />
         </article>
         <article id="telefono">
@@ -38,32 +40,40 @@
             id="telef"
             name="telef"
             class="form-control"
+            placeholder="inputTelef"
             value=""
+            pattern="\d{9,11}"
           />
         </article>
         <article class="nacimiento">
-          <span>Nacimiento</span>
+          <span>Fecha de Nacimiento</span>
           <label for="dia">dia:</label>
           <input
-            type="text"
+            type="number"
             id="dia"
             name="dia"
+            min="1"
+            max="31"
             class="form-control"
             value=""
           />
           <label for="mes">mes:</label>
           <input
-            type="text"
+            type="number"
             id="mes"
             name="mes"
+            min="1"
+            max="12"
             class="form-control"
             value=""
           />
           <label for="ano">Año:</label>
           <input
-            type="text"
+            type="number"
             id="ano"
             name="ano"
+            min="1800"
+            max="9999"
             class="form-control"
             value=""
           />
@@ -76,6 +86,7 @@
             name="correo"
             class="form-control"
             value=""
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z0-9_]{2,5}"
           />
         </article>
         <article class="dni">
@@ -86,11 +97,12 @@
             name="identif"
             class="form-control"
             value=""
+            patter="/^[XYZ]?\d{5,8}[A-Z]{1}$/"
           />
         </article>
         <article class="acepta">
           <label for="condiciones">Acepto las condiciones</label>
-          <input type="checkbox" id="condiciones" name="condiciones" required />
+          <input type="checkbox" id="condiciones" name="condiciones" />
         </article>
         <div class="control">
           <button type="submit" name="btn_registo" id="btn_registo">
