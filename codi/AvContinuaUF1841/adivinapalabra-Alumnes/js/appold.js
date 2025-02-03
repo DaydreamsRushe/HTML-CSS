@@ -38,9 +38,9 @@ const adivina = () => {
 
 const juega = (e) => {
   letra.focus();
-  if (e.key.match("[a-zA-Z]") && !lost && !win && !usadas.includes(e.key)) {
+  if (e.key.match("[A-Za-z]") && !lost && !win && !usadas.includes(e.key)) {
     //el codigo jugara si la tecla es una letra, si aun se puede jugar y si la tecla no se ha usado previamente
-    console.log(e.key);
+    console.log(e.code);
     usadas.push(e.key);
     let j = 0;
     let t = false;
