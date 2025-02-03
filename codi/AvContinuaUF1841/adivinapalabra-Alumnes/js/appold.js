@@ -11,7 +11,10 @@ let usadas = new Array();
 let win = false;
 let lost = false;
 
+letra.readOnly = true; //el input oculto solo puede leer, no escribirse en el
+
 if (palabra.length <= 4) {
+  // si es una palabra corta solo dejamos 6 intentos
   intentos = 6;
 } else {
   intentos = 8;
@@ -22,6 +25,11 @@ displayRestantes.innerHTML = intentos;
 for (let i = 0; i < palabra.length; i++) {
   espacios.innerHTML = espacios.innerHTML + '<input type="text">';
   console.log(espacios.innerHTML);
+}
+
+for (const ins of document.querySelectorAll(".inputs > input")) {
+  //desactivamos los campos, solo queremos que sean para contener las letras de la palabra
+  ins.disabled = true;
 }
 
 const adivina = () => {
@@ -61,11 +69,13 @@ const juega = (e) => {
     displayRestantes.innerHTML = "Haz click en Volver a empezar";
     displayErrores.innerHTML = "Has ganado";
     displayFinal.innerHTML = msg[ran];
+    displayFinal.style.color = "green";
   }
   if (lost) {
     let ran = Math.floor(Math.random() * 6);
     displayErrores.innerHTML = "No tienes mas intentos";
     displayFinal.innerHTML = msgError[ran];
+    displayFinal.style.color = "red";
   }
 };
 console.log(palabra);
