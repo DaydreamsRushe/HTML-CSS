@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabla básica de conceptos</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <link rel="stylesheet" href="prism.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="hero">
+        <h1 class="title padding">Accesibilidad en la Web</h1>
+    </div>
+    <div class="content-container">
+        <div class="content">
+            <div class="padding">
+                <div class=" markdown-body line-numbers">
+                    <h2>Conceptos básicos de accesibilidad en HTML</h2>
+                    <div class="custom-slant">
+                        <p>Es importante que diseñemos nuestro HTML teniendo en cuenta la accesibilidad.</p>
+                        <p>Tener HTML accesible significa que las personas con discapacidad pueden utilizar la Web. Hay
+                            usuarios
+                            totalmente ciegos o con discapacidad visual, personas con problemas de pérdida auditiva y
+                            una multitud de
+                            otras discapacidades diferentes.</p>
+                        <p>Desafortunadamente, a este tema no se le da la importancia que necesita y no parece tan
+                            interesante como
+                            otros.
+                        </p>
+                        <p>¿Qué pasa si una persona no puede <em>ver</em> su página, pero todavía quiere consumir su
+                            contenido?
+                            Primero,
+                            ¿cómo lo hacen? No pueden usar el mouse, usan algo llamado<strong> lector de
+                                pantalla</strong>. No tienes
+                            que
+                            imaginarte eso. Puedes probar uno ahora: Google ofrece el <a
+                                href="https://chrome.google.com/webstore/detail/chromevox/kgejglhpjiefppelpmljglcjbhoiplfn/"
+                                target="new">Extensión
+                                ChromeVox Chrome</a>. La accesibilidad también debe cuidar de permitir que las
+                            herramientas seleccionen
+                            elementos fácilmente o naveguen por las páginas.</p>
+                        <p>Las páginas web y las aplicaciones web no siempre se construyen con la accesibilidad como uno
+                            de sus
+                            primeros objetivos, y tal vez la versión 1 no sea accesible, pero es posible hacer que una
+                            página web sea
+                            accesible después de ser construida. Cuanto antes, mejor, pero nunca es demasiado tarde.</p>
+                        <p>Actualmente los sitios web creados por el gobierno u otras organizaciones públicas deben
+                            ser accesibles.</p>
+                        <p>Las empresas que facturan más de 1.000.000 € tienen que disponer de sitios web accesibles.
+                        </p>
+                        <p>¿Qué significa esto para hacer que un HTML sea accesible? Veamos algunos de los principales
+                            conceptos en
+                            losque se debe pensar.</p>
+                        <blockquote class="alert alert-warning">
+                            <p style="color:black">Nota: Es imprescindible atender a otros ámbitos: En CSS, los colores,
+                                el contraste
+                                y las fuentes y
+                                tamaños. O <a href="https://css-tricks.com/accessible-svgs/" target="new">
+                                    cómo hacer que
+                                    las imágenes SVG sean accesibles</a>. </p>
+                        </blockquote>
+
+                        <h2 class="vspace" id="use-html-attributes">Utiliza correctamente Html y sus atributos</h2>
+                        <p>Desarrollar HTML con doctypes correctos y HTML 5, y ¡es una de las principales ayudas que
+                            puedes ofrecer a los periféricos de soporte a
+                            personas con discapacidades y a buscadores.
+                        </p>
+                        <p>El contenido bien estructurado con html actualizado, atributos de idioma para agilizar su
+                            acceso, meta-etiquetas de normativa iso correctas, de identificación de dispositivos
+                            móviles.
+                            Crea un title adecuado para cada html de tú web.</p>
+
+                        <pre class="language-js"><code class="language-js"> 
+ &lt;!DOCTYPE html>//Definición doctype
+ &lt;html lang="es">//atributo lang imprescindible
+                            
+    &lt;head>
+    &lt;meta charset="UTF-8">//meta juego carácteres válido
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+    // meta contenido para diferentes dispositivos
+                            
+   &lt;title>Tabla básica de conceptos&lt;/title>
+   //title descriptivo , má=65 caràcteres, keywords a la izquierda, no usar "-":" como separadores. Sí usar "|"
+   &lt;link rel="stylesheet" href="css/style.css">//crear directorios para los diferentes recursos
+    &lt;script src="js.javascript.js">&lt;/script>
+    &lt;/head>
+                            
+     &lt;body>-------&lt;/body>
+    </code></pre>
+                        <h2 class="vspace" id="use-semantic-html">Utiliza HTML semántico</h2>
+                        <p>Desarrollar con HTML semántico es muy importante y es una de las principales ayudas que
+                            puedes ofrecer a
+                            personas con discapacidades y a buscadores.
+                            Veamos algunos escenarios comunes.</p>
+                        <p>El contenido bien estructurado permite una navegación y un procesamiento más eficientes.
+                            Utiliza HTML y
+                            WAI-ARIA para mejorar la navegación y la orientación en páginas web y aplicaciones.</p>
+
+                        <p><strong>Regiones de página:</strong> identifica y marca regiones en páginas web utilizando
+                            roles HTML5 y
+                            WAI-ARIA.</p>
+                        <p><strong>Etiquetado de regiones:</strong>etiquetea regiones para permitir que los usuarios las
+                            distingan y
+                            accedan a ellas.</p>
+
+                        <p><strong>Encabezados:</strong> agrega encabezados y rellénalos lógicamente para etiquetar
+                            secciones de
+                            páginas web de
+                            acuerdo con sus relaciones e importancia.</p>
+
+                        <p><strong>Estructura del contenido:</strong> marca el contenido de una página de una manera que
+                            utilice
+                            elementos apropiados y significativos. <strong> <code
+                                    class="code">&lt;header>, &lt;nav>, &lt;main>, &lt;footer>, &lt;aside>, &lt;section>, &lt;article></code></strong>,
+                        </p>
+                        <pre class="language-js"><code class="language-js">    
+            &lt;header>
+                    &lt;img src="/images/logo.png" alt="SpaceBear Inc.">
+             &lt;/header>
+            &lt;nav aria-label="Main Navigation">&lt;/nav>
+            &lt;nav aria-labelledby="quicknav-heading">
+                &lt;h5 id="quicknav-heading">Quick Navigation&lt;/h5>
+            &lt;/nav>
+            &lt;main>
+                    &lt;h1>Stellar launch weekend for the SpaceBear 7!&lt;/h1>
+            &lt;/main>
+            &lt;aside>
+                  &lt;h3>Related Articles&lt;/h3>
+            &lt;/aside>
+            &lt;footer>
+                   &lt;p>&copy; 2021 SpaceBears Inc.&lt;/p>
+            &lt;/footer>
+        </code></pre>
+                        <blockquote class="alert alert-warning">
+                            <p style="color:black">Nota: Orientación sobre cómo crear sitios web que cumplan con las
+                                WCAG
+                                <a href="https://www.w3.org/WAI/tutorials/page-structure/" target="new">Maquetar Layout
+                                    con estructuras
+                                    semánticas </a>
+                            </p>
+                        </blockquote>
+
+                        <p>Es importante utilizar la estructura correcta para las etiquetas de encabezado. La más
+                            importante y
+                            única
+                            en cada html
+                            es <strong> <code class="code">&lt;h1></code></strong>, usa números más altos para los menos
+                            importantes, pero todos los
+                            encabezados del
+                            mismo
+                            nivel deben tener el mismo significado (piénsalo como una estructura de árbol)</p>
+                        <pre class="language-js"><code class="language-js">
+        &lt;h1>........&lt;/h1>
+            &lt;h2>.......&lt;/h2>
+                &lt;h3>.......&lt;/h3>
+            &lt;h2>.......&lt;/h2>
+            &lt;h2>.......&lt;/h2>
+                &lt;h3>.......&lt;/h3>
+                  &lt;h4>.......&lt;/h4> </code></pre>
+                        <p>Usar <strong> <code class="code">&lt;strong></code></strong> y <strong> <code
+                                    class="code">&lt;em></code></strong> en vez de <strong><code
+                                    class="code">&lt;b></code></strong> y
+                            <strong> <code class="code">&lt;i></code></strong>. Visualmente tienen el mismo aspecto,
+                            pero los dos
+                            primeros tienen más significado asociado a ellos. <strong><code
+                                    class="code">&lt;b></code></strong> y
+                            <strong> <code class="code">&lt;i></code></strong> son solamente
+                            visuales y están deprecados.
+                        </p>
+                        <p>Las listas son importantes. Un lector de pantalla puede detectar una lista y proporcionar una
+                            descripción
+                            general, luego dejar que el usuario elija entrar en la lista o no.</p>
+                        <p>Una tabla debe tener un<strong> <code class="code">&lt;caption></code></strong>: etiqueta que
+                            describe su
+                            contenido</p>
+                        <pre><code class="language-html" data-lang="html">  
+&lt;table>
+    &lt;caption>Tabla de calificaciones de estudiantes&lt;/caption>
+    &lt;thead>// Cabecera accesible
+        &lt;tr>
+            &lt;th scope="col">Nombre&lt;/th> //Cabeceras de columna
+            &lt;th scope="col">Asignatura&lt;/th>
+            &lt;th scope="col">Calificación&lt;/th>
+        &lt;/tr>
+    &lt;/thead>
+    &lt;tbody>//body accesible de la tabla
+        &lt;tr>
+            &lt;th scope="row">Juan Pérez&lt;/th>// Cabecera de fila
+            &lt;td>Lengua y Literatura&lt;/td>
+            &lt;td>8.5&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;th scope="row">María Gómez&lt;/th>
+            &lt;td>Matemáticas&lt;/td>
+            &lt;td>9.2&lt;/td>
+        &lt;/tr>
+        &lt;tr>
+            &lt;th scope="row">Carlos López&lt;/th>
+            &lt;td>Ciencias Sociales&lt;/td>
+            &lt;td>7.8&lt;/td>
+        &lt;/tr>
+    &lt;/tbody>
+    &lt;tfoot>//footer accesible de la tabla
+        &lt;tr>
+            &lt;td colspan="3">Calificaciones en escala de 0 a 10.&lt;/td>
+        &lt;/tr>
+    &lt;/tfoot>
+&lt;/table>
+</code></pre>
+                        <blockquote class="alert alert-warning">
+                            <p style="color:black">Nota: Especificaciones para el uso de las tablas con
+                                las WCAG
+                                <a href="https://www.w3.org/WAI/tutorials/tables/" target="new">Maquetar Layout con
+                                    tablas accesibles</a>.
+                            </p>
+                        </blockquote>
+
+                        <h2 class="vspace" id="use-alt-attributes-for-images">Usa atributos <strong> <code
+                                    class="code2"> alt </code></strong>
+                            para imágenes</h2>
+                        <p>Todas las imágenes deben tener un atributo<strong> <code
+                                    class="code"> alt </code></strong>que describe
+                            el contenido de la imagen. No es solo una buena práctica, es requerido por el estándar HTML
+                            y su HTML sin
+                            él no está validado. El problema lo tenemos cuando una imagen es puramente decorativa. Si no
+                            deseamos que sea leida una imagen por el validador, por no tener
+                            definido el atributo alt, añadir "tabindex=-1" a la misma y no afectará a la accesibilidad
+                        </p>
+                        <pre><code class="language-html" data-lang="html">&lt;<span>img</span> <span>src</span><span>=</span><span>"dog.png"</span> <span>alt</span><span>=</span><span>"My dog"</span><span> title</span><span>=</span><span>"Another dog"</span>&gt;</code></pre>
+
+                        <p>También ayuda a los motores de búsqueda a posicionar, puede ser un incentivo para que lo
+                            agregues.</p>
+                        <blockquote class="alert alert-warning">
+                            <p style="color:black">Nota: Orientación sobre diferentes especificaciones para el uso de
+                                las imágenes con
+                                las WCAG
+                                <a href="https://www.w3.org/WAI/tutorials/images/" target="new">Maquetar Layout con
+                                    imágenes accesibles
+                                </a>, <strong> <code
+                                        class="code">&lt;figure>, &lt;figcaption>, longdesc, aria-describedby, &lt;picture> </code></strong>
+                            </p>
+                        </blockquote>
+                        <h2 class="vspace" id="use-the-role-attribute">Utiliza el atributo<strong> <code
+                                    class="code2"> role</code></strong></h2>
+                        <p> Los atributos <code class="code"> role </code></strong>Permiten asignar roles específicos a
+                            los
+                            diversos elementos de su página.
+                        </p>
+                        <p>Puedes asignar muchos roles diferentes: complementario, lista, elemento de lista, principal,
+                            navegación,
+                            región, pestaña, alerta, aplicación, artículo, banner, botón, celda, casilla de
+                            verificación,
+                            información de contenido, diálogo, documento, fuente, figura, formulario, cuadrícula,
+                            cuadrícula,
+                            encabezado, img,
+                            cuadro de lista, fila, grupo de filas, búsqueda, cambiar, tabla, panel de pestañas, cuadro
+                            de texto,
+                            temporizador.
+                        </p>
+                        <p>Son muchos los atributos role y para que investigues, adjunto un vínculo a la referencia
+                            completa de cada
+                            uno de ellos <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
+                                target="new">
+                                este enlace MDN</a>. Pero no es necesario asignar un rol a cada elemento de la página.
+                            Los lectores de
+                            pantalla pueden inferir de l etiqueta HTML en la mayoría de los casos. Por ejemplo, no es
+                            necesario
+                            agregar una etiqueta de función o rol a etiquetas semánticas como<strong> <code
+                                    class="code">&lt;nav>, &lt;header>, &lt;figure>, &lt;picture>, &lt;footer>, &lt;main>, &lt;aside>, &lt;section>, &lt;article>, &lt;label></code></strong>.El
+                            siguiente ejemplo de etiqueta semántica muestra un uso mas eficaz con etiquetas semánticas y
+                            no es
+                            necesario usar el atributo <code class="code"> role </code></strong>, ni es recomendable.
+                        </p>
+                        <pre><code class="language-html" data-lang="html">&lt;<span>nav</span>&gt; &lt;<span>ul</span>&gt; &lt;<span>li</span>&gt;&lt;<span>a</span> <span>href</span><span>=</span><span >"/"</span>&gt;Home&lt;/<span>a</span>&gt;&lt;/<span>li</span>&gt;
+              &lt;<span>li</span>&gt;&lt;<span>a</span> <span>href</span><span>=</span><span >"/blog"</span>&gt;Blog&lt;/<span>a</span>&gt;&lt;/<span>li</span>&gt; &lt;/<span>ul</span>&gt; &lt;/<span>nav</span>&gt;</code></pre>
+
+                        <p>Si te ves <em>forzado</em> a usar una etiqueta <strong><code
+                                    class="code">&lt;div></code></strong>en
+                            lugar de<strong><code class="code"> &lt;nav></code></strong>, puedes usar el atributo
+                            <strong><code class="code"> role="navigation" </code></strong>.
+                        </p>
+                        <pre><code class="language-html" data-lang="html">&lt;<span>div</span> <span>role</span><span>=</span><span >"navigation"</span>&gt; &lt;<span>ul</span>&gt;&lt;<span>li</span>&gt;&lt;<span>a</span> <span>href</span><span>=</span><span >"/"</span>&gt;Home&lt;/<span>a</span>&gt;&lt;/<span>li</span>&gt;
+            &lt;<span>li</span>&gt;&lt;<span>a</span> <span>href</span><span>=</span><span>"/blog"</span>&gt;Blog&lt;/<span>a</span>&gt;&lt;/<span>li</span>&gt; &lt;/<span>ul</span>&gt; &lt;/<span>div</span>&gt;</code></pre>
+                        <p>Así que aquí tienes un ejemplo práctico:<strong><code class="code"> role</code></strong> se
+                            utiliza para
+                            asignar un valor significativo cuando la etiqueta no transmite ya el significado.</p>
+                        <h2 class="vspace" id="use-the-tabindex-attribute">Utiliza el atributo <strong><code
+                                    class="code2"> tabindex </code></strong></h2>
+                        <p>Los atributos <strong><code class="code"> tabindex </code></strong> permiten cambiar el orden
+                            en que al
+                            presionar la tecla Tab se seleccionan los elementos &quot;seleccionables&quot;. De forma
+                            predeterminada,
+                            solo los enlaces y
+                            elementos de formulario se pueden &quot;seleccionar&quot; mediante la navegación con la
+                            tecla Tab (y no es
+                            necesariobconfigurar <code class="code"> tabindex </code></strong> en ellos).</p>
+                        <p>Añadiendo <code class="code"> tabindex="0" </code></strong> convertimos un elemento HTML,
+                            seleccionable:
+                        </p>
+                        <pre><code class="language-html" data-lang="html">&lt;<span>div</span> <span>tabindex</span><span>=</span><span >"0"</span>&gt;
+              ...
+            &lt;/<span>div</span>&gt;</code></pre>
+                        <p>Usando <strong><code class="code"> tabindex="-1" </code></strong>en su lugar, eliminas el
+                            elemento de
+                            esta
+                            navegación basada en pestañas, puede ser bastante útil.</p>
+                        <h2 class="vspace" id="use-the-aria-attributes">Utiliza atributos <strong><code
+                                    class="code2"> aria </code></strong>
+                        </h2>
+                        <p>ARIA es un acrónimo que significa Accessible Rich Internet Applications y define la semántica
+                            que se
+                            puede aplicar a los elementos.</p>
+                        <h3 id="aria-label"><code>aria-label</code></h3>
+                        <p>Este atributo se usa para agregar una cadena para describir un elemento, cuando la etiqueta
+                            no sea la
+                            correcta o no sea descriptiva.</p>
+                        <p>Ejemplo:</p>
+                        <div>
+                            <pre><code class="language-html" data-lang="html">&lt;<span>p</span> <span>aria-label</span><span>=</span><span >"The description of the product"</span>&gt;...&lt;/<span>p</span>&gt;</code></pre>
+                            <p>Utiliza este atributo en un elemento o etiqueta etiqueta no explícita, si es necesario.
+                            </p>
+                            <h3 id="aria-labelledby"><code>aria-labelledby</code></h3>
+                            <p>Este atributo establece una correlación entre el elemento actual y el que lo etiqueta.
+                            </p>
+                            <p>Si sabes como un <strong><code class="code"> input </code></strong>se puede asociar a
+                                un <strong><code class="code"> label</code></strong>, estye atributo funciona de igual
+                                manera cuando sea
+                                necesario</p>
+                            <p>Pasamos la identificación del elemento que describe el elemento actual.</p>
+                            <p>Ejemplo:</p>
+                            <pre><code class="language-html" data-lang="html">&lt;<span>h3</span> <span>id</span><span>=</span><span >"description"</span>&gt;The description of the product&lt;/<span>h3</span>&gt;
+  <p>&lt;<span>p</span> <span>aria-labelledby</span><span>=</span><span >“description”</span>&gt;
+  …
+  &lt;/<span>p</span>&gt;</p></code></pre>
+                            <p></p>
+                            <h3 id="aria-describedby"><code>aria-describedby</code></h3>
+                            <p>Este atributo nos permite asociar un elemento con otro elemento que sirve como
+                                descripción.</p>
+                            <p>Ejemplo:</p>
+                            <pre><code class="language-html" data-lang="html">&lt;<span>button</span> <span>aria-describedby</span><span>=</span><span >"payNowDescription"</span> &gt;Pay now&lt;/<span>button</span>&gt;
+  <p>&lt;<span>div</span> <span>id</span><span>=</span><span >“payNowDescription”</span>&gt;Clicking 
+    the button will send you to our Stripe form!&lt;/<span>div</span>&gt;</p></code></pre>
+
+                            <h3 id="aria-hidden"><code>aria-hidden</code></h3>
+                            <p>Usa aria-hidden para ocultar contenido</p>
+                            <p>Me gustan los diseños minimalistas. Si el documento es principalmente contenido, con
+                                algunos enlaces, pero algunos de los contenidos son solo elementos visuales
+                                que no suman a la experiencia de una persona que no puede ver la página. Como logotipos,
+                                imágenes:
+                                Añadiendo el atributo <strong><code class="code">aria-hidden </code></strong> le dirá a
+                                los lectores de
+                                pantalla que ignoren
+                                ese elemento.</p>
+                            <h2 class="vspace" id="where-to-learn-more">Donde aprender mas</h2>
+                            <p>Este documento es solo una introducción al tema. Para obtener más información, recomiendo
+                                estos
+                                recursos:
+                            </p>
+                            <ul class="lista">
+                                <li class="list"><a
+                                        href="https://www.w3.org/TR/WCAG20/">https://www.w3.org/TR/WCAG20/</a></li>
+                                <li class="list"><a href="https://webaim.org/">https://webaim.org</a></li>
+                                <li class="list"><a
+                                        href="https://developers.google.com/web/fundamentals/accessibility/">https://developers.google.com/web/fundamentals/accessibility/</a>
+                                </li>
+                            </ul>
+
+                            <script src="prism.js"></script>
+</body>
+
+</html>
