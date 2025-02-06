@@ -5,6 +5,7 @@ const displayRestantes = document.querySelector(".restantes > span");
 const displayErrores = document.querySelector(".letrasErroneas > span");
 const displayFinal = document.querySelector(".mostra");
 const btn = document.querySelector(".reset-btn");
+const btn_contrast = document.getElementById("contrast");
 let intentos;
 let aciertos = 0;
 let usadas = new Array();
@@ -36,8 +37,17 @@ const adivina = () => {
   location.reload();
 };
 
+const contrastChange = () => {
+  document.querySelector("body").classList.toggle("day");
+  document.querySelector("main h1").classList.toggle("text-day");
+  let texts = document.querySelectorAll("p");
+
+  texts.forEach((paf) => {
+    paf.classList.toggle("text-day");
+  });
+};
+
 const juega = (e) => {
-  letra.focus();
   if (
     e.key.match("^[ñÑçÇA-Za-z]{1}$") &&
     !lost &&
@@ -92,3 +102,4 @@ addEventListener("keyup", () => {
 
 letra.onkeyup = juega;
 btn.onclick = adivina;
+btn_contrast.onclick = contrastChange;

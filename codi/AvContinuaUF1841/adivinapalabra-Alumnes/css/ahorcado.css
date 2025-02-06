@@ -1,3 +1,10 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
 *,
 *::after,
 *::before,
@@ -16,12 +23,80 @@ body {
   width: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.day {
+  background-color: bisque;
+}
+
+.night {
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  padding: 20px 0;
+  background-color: black;
+  border-bottom: 4px green solid;
+  border-top: 4px green solid;
+}
+
+header > h1 {
+  color: bisque;
+}
+
+.controls > button {
+  width: 35px;
+  height: 35px;
+  border: gray solid 2px;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: bisque;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.controls > button:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.controls > button:active {
+  background-color: rgb(128, 100, 67);
+  color: black;
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: solid 2px rgba(143, 188, 143, 0.7);
+  border-top: none;
+}
+
+main h1 {
   margin: 10px;
+  color: bisque;
+}
+
+main h1.text-day {
+  color: black;
 }
 
 .content {
   margin: 10px;
+  width: 100%;
 }
 
 .lletra {
@@ -32,13 +107,13 @@ main {
 .inputs {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .inputs > input {
-  width: 250px;
-  margin: 3px;
-  height: 1.5rem;
+  width: 70px;
+  margin: 10px;
+  height: 3.5rem;
   font-size: 1.2rem;
   color: green;
   font-weight: bold;
@@ -48,8 +123,17 @@ main {
   border: solid 1px black;
 }
 
+.detalles {
+  margin: 20px;
+}
+
 .detalles > p {
   margin: 10px 0;
+  color: bisque;
+}
+
+.detalles > p.text-day {
+  color: black;
 }
 
 .mostra {
@@ -59,8 +143,9 @@ main {
 }
 
 .reset-btn {
+  margin: 20px;
   padding: 20px;
   color: white;
   background-color: purple;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }

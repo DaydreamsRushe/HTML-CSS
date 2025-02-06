@@ -4,12 +4,23 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/ahorcado.css" />
+    <link rel="stylesheet" href="fontello-73614873/css/fontello.css" />
     <title>ARRRRG-divina</title>
   </head>
 
-  <body>
+  <body class="day">
+    <header>
+      <h1>A&lt;div>iNa Palabras!!</h1>
+      <div class="controls">
+        <button id="contrast" class="contrast">
+          <i class="icon-adjust"></i>
+        </button>
+        <button id="fontDown">A<sup>-</sup></button>
+        <button id="fontUp">A<sup>+</sup></button>
+      </div>
+    </header>
     <main>
-      <h1>Palabra a adivinar</h1>
+      <h1 class="text-day">Palabra a adivinar</h1>
 
       <div class="content">
         <input type=" text" class="lletra" maxlength="1" />
@@ -19,9 +30,9 @@
         <hr id="linea" />
 
         <div class="detalles">
-          <p class="pista">Pista: <span></span></p>
-          <p class="restantes">Intentos restantes: <span></span></p>
-          <p class="letrasErroneas">Letras erroneas: <span></span></p>
+          <p class="pista text-day">Pista: <span></span></p>
+          <p class="restantes text-day">Intentos restantes: <span></span></p>
+          <p class="letrasErroneas text-day">Letras erroneas: <span></span></p>
         </div>
         <div class="mostra"></div>
         <div id="boton">
