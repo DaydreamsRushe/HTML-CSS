@@ -6,6 +6,9 @@ const displayErrores = document.querySelector(".letrasErroneas > span");
 const displayFinal = document.querySelector(".mostra");
 const btn = document.querySelector(".reset-btn");
 const btn_contrast = document.getElementById("contrast");
+const btn_fonUp = document.getElementById("fontUp");
+const btn_fonDown = document.getElementById("fontDown");
+
 let intentos;
 let aciertos = 0;
 let usadas = new Array();
@@ -95,9 +98,17 @@ const juega = (e) => {
 };
 console.log(palabra);
 
-addEventListener("keyup", () => {
-  letra.focus();
+addEventListener("keyup", (e) => {
+  if(e.key.match("^[ñÑçÇA-Za-z]{1}$")){
+    letra.focus();
   letra.value = "";
+  }else if(e.key == "ArrowUp"){
+
+  }else if(e.key == "ArrowDown"){
+    
+  }
+
+  
 });
 
 letra.onkeyup = juega;
