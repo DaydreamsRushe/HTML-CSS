@@ -113,7 +113,6 @@ const juega = (e) => {
 const increaseText = () => {
   //aumentar el tamaño del texto
   let texts = document.querySelectorAll("p");
-  console.log(texts[1].style.height);
   if (textfont < 30) {
     textfont += 1;
     paddingtext += 1;
@@ -139,7 +138,7 @@ const decreaseText = () => {
 
 addEventListener("keyup", (e) => {
   //Las respuestas sobre el teclado responden si es una sola letra o las flechas de arriba y abajo
-  console.log(`${msg[1].valueOf()}`);
+  console.log(`${msg[0].valueOf()}`);
   console.log(e.key);
   if (e.key.match("^[ñÑçÇA-Za-z]{1}$")) {
     letra.focus();
