@@ -14,6 +14,8 @@ let aciertos = 0;
 let usadas = new Array();
 let win = false;
 let lost = false;
+let textfont = 16;
+let paddingtext = 0;
 
 letra.readOnly = true; //el input oculto solo puede leer, no escribirse en el
 
@@ -98,19 +100,45 @@ const juega = (e) => {
 };
 console.log(palabra);
 
-addEventListener("keyup", (e) => {
-  if(e.key.match("^[ñÑçÇA-Za-z]{1}$")){
-    letra.focus();
-  letra.value = "";
-  }else if(e.key == "ArrowUp"){
-
-  }else if(e.key == "ArrowDown"){
-    
+const increaseText = () => {
+  let texts = document.querySelectorAll("p");
+  console.log(texts[1].style.height);
+  if (textfont < 30) {
+    textfont += 1;
+    paddingtext += 1;
+    texts.forEach((paf) => {
+      paf.style.fontSize = `${textfont}px`;
+      paf.style.padding = `${paddingtext}px 0`;
+    });
   }
+};
 
-  
+const decreaseText = () => {
+  let texts = document.querySelectorAll(".detalles > p");
+  if (textfont > 10) {
+    textfont -= 1;
+    paddingtext -= 1;
+    texts.forEach((paf) => {
+      paf.style.fontSize = `${textfont}px`;
+      paf.style.padding = `${paddingtext}px 0`;
+    });
+  }
+};
+
+addEventListener("keyup", (e) => {
+  console.log(e.key);
+  if (e.key.match("^[ñÑçÇA-Za-z]{1}$")) {
+    letra.focus();
+    letra.value = "";
+  } else if (e.key == "ArrowUp") {
+    increaseText();
+  } else if (e.key == "ArrowDown") {
+    decreaseText();
+  }
 });
 
 letra.onkeyup = juega;
 btn.onclick = adivina;
 btn_contrast.onclick = contrastChange;
+btn_fonDown.onclick = decreaseText;
+btn_fonUp.onclick = increaseText;
