@@ -9,37 +9,48 @@ const btn_contrast = document.getElementById("contrast");
 const btn_fonUp = document.getElementById("fontUp");
 const btn_fonDown = document.getElementById("fontDown");
 
-let intentos;
+let intentos; //estos necesitan ser creados de forma global
 let aciertos = 0;
 let usadas = new Array();
 let win = false;
 let lost = false;
 let textfont = 16;
 let paddingtext = 0;
-
-letra.readOnly = true; //el input oculto solo puede leer, no escribirse en el
-
-if (palabra.length <= 4) {
-  // si es una palabra corta solo dejamos 6 intentos
-  intentos = 6;
-} else {
-  intentos = 8;
-}
-displayPista.innerHTML = pista;
-displayRestantes.innerHTML = intentos;
-
-for (let i = 0; i < palabra.length; i++) {
-  espacios.innerHTML = espacios.innerHTML + '<input type="text">';
-  console.log(espacios.innerHTML);
-}
-
-for (const ins of document.querySelectorAll(".inputs > input")) {
-  //desactivamos los campos, solo queremos que sean para contener las letras de la palabra
-  ins.disabled = true;
-}
+let palabra = "";
+let pista = "";
+let mensaje = new Array();
 
 const adivina = () => {
-  location.reload();
+  rand = Math.floor(Math.random() * 19);
+  palabra = listado[rand].palabra;
+  pista = listado[rand].pista;
+  aciertos = 0;
+  usadas = new Array();
+  win = false;
+  lost = false;
+  espacios.innerHTML = "";
+  displayErrores.innerHTML = "";
+  displayFinal.innerHTML = "";
+  letra.readOnly = true; //el input oculto solo puede leer, no escribirse en el
+  console.log(palabra);
+  if (palabra.length <= 4) {
+    // si es una palabra corta solo dejamos 6 intentos
+    intentos = 6;
+  } else {
+    intentos = 8;
+  }
+  displayPista.innerHTML = pista;
+  displayRestantes.innerHTML = intentos;
+
+  for (let i = 0; i < palabra.length; i++) {
+    espacios.innerHTML = espacios.innerHTML + '<input type="text">';
+    console.log(espacios.innerHTML);
+  }
+
+  for (const ins of document.querySelectorAll(".inputs > input")) {
+    //desactivamos los campos, solo queremos que sean para contener las letras de la palabra
+    ins.disabled = true;
+  }
 };
 
 const contrastChange = () => {
@@ -53,31 +64,32 @@ const contrastChange = () => {
 };
 
 const juega = (e) => {
+  let letrita = e.key.toLowerCase();
   if (
-    e.key.match("^[ñÑçÇA-Za-z]{1}$") &&
+    letrita.match("^[ñÑçÇA-Za-z]{1}$") &&
     !lost &&
     !win &&
-    !usadas.includes(e.key)
+    !usadas.includes(letrita)
   ) {
     //el codigo jugara si la tecla es una letra, si aun se puede jugar y si la tecla no se ha usado previamente
-    console.log(e.key);
-    usadas.push(e.key);
+    console.log(letrita);
+    usadas.push(letrita);
     let j = 0;
     let t = false;
-    while (palabra.indexOf(e.key, j) != -1) {
+    while (palabra.indexOf(letrita, j) != -1) {
       //saber si se ha acertado
-      console.log(palabra.indexOf(e.key, j));
-      espacios.children[palabra.indexOf(e.key, j)].value = e.key;
+      console.log(palabra.indexOf(letrita, j));
+      espacios.children[palabra.indexOf(letrita, j)].value = letrita;
       t = true;
       aciertos += 1;
-      j = palabra.indexOf(e.key, j) + 1;
+      j = palabra.indexOf(letrita, j) + 1;
       if (aciertos == palabra.length) win = true;
     }
     if (!t) {
       //no se ha acertado
       intentos -= 1;
       if (displayErrores.innerHTML != "") displayErrores.innerHTML += ",";
-      displayErrores.innerHTML += e.key; //presentamos la letra ya usada
+      displayErrores.innerHTML += letrita; //presentamos la letra ya usada
       if (intentos == 0) {
         lost = true;
       }
@@ -85,22 +97,21 @@ const juega = (e) => {
     }
   }
   if (win) {
-    let ran = Math.floor(Math.random() * 6);
+    mensaje = [...msg];
     displayRestantes.innerHTML = "Haz click en Volver a empezar";
     displayErrores.innerHTML = "Has ganado";
-    displayFinal.innerHTML = msg[ran];
+    displayFinal.innerHTML = `${mensaje[Math.floor(Math.random() * 6)]}`;
     displayFinal.style.color = "green";
   }
   if (lost) {
-    let ran = Math.floor(Math.random() * 6);
     displayErrores.innerHTML = "No tienes mas intentos";
-    displayFinal.innerHTML = msgError[ran];
+    displayFinal.innerHTML = `${msgError[Math.floor(Math.random() * 6)]}`;
     displayFinal.style.color = "red";
   }
 };
-console.log(palabra);
 
 const increaseText = () => {
+  //aumentar el tamaño del texto
   let texts = document.querySelectorAll("p");
   console.log(texts[1].style.height);
   if (textfont < 30) {
@@ -114,6 +125,7 @@ const increaseText = () => {
 };
 
 const decreaseText = () => {
+  //disminuir el tamaño del texto
   let texts = document.querySelectorAll(".detalles > p");
   if (textfont > 10) {
     textfont -= 1;
@@ -126,6 +138,8 @@ const decreaseText = () => {
 };
 
 addEventListener("keyup", (e) => {
+  //Las respuestas sobre el teclado responden si es una sola letra o las flechas de arriba y abajo
+  console.log(`${msg[1].valueOf()}`);
   console.log(e.key);
   if (e.key.match("^[ñÑçÇA-Za-z]{1}$")) {
     letra.focus();
@@ -136,6 +150,8 @@ addEventListener("keyup", (e) => {
     decreaseText();
   }
 });
+
+adivina(); //al cargar la pagina se iniciara una nueva palabra
 
 letra.onkeyup = juega;
 btn.onclick = adivina;

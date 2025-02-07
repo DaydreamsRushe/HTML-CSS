@@ -77,6 +77,6 @@ const listado = [
   },
 ];
 
-const rand = Math.floor(Math.random() * 19);
-const palabra = listado[rand].palabra;
-const pista = listado[rand].pista;
+/* let rand = Math.floor(Math.random() * 19); */ //se generan de forma "let" para poder reasignarse al empezar un nuevo juego
+/*let palabra = listado[rand].palabra; */
+/* let pista = listado[rand].pista; */
