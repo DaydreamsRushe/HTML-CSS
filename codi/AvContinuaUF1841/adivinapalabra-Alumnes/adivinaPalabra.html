@@ -10,17 +10,17 @@
 
   <body class="day">
     <header>
-      <h1>A&lt;div>iNa Palabras!!</h1>
-      <div class="controls">
-        <button id="contrast" class="contrast">
+      <h1 tabindex="1">A&lt;div>iNa Palabras!!</h1>
+      <div aria-label="Accessibility buttons" class="controls">
+        <button tabindex="1" id="contrast" class="contrast" title="Cambiar contraste">
           <i class="icon-adjust"></i>
         </button>
-        <button id="fontDown">A<sup>-</sup></button>
-        <button id="fontUp">A<sup>+</sup></button>
+        <button tabindex="1" id="fontDown" title="Letra mas pequeña">A<sup>-</sup></button>
+        <button tabindex="1" id="fontUp" title="Letra mas grande">A<sup>+</sup></button>
       </div>
     </header>
     <main>
-      <h1 class="text-day">Palabra a adivinar</h1>
+      <h1 tabindex="1" class="text-day">Palabra a adivinar</h1>
 
       <div class="content">
         <input type=" text" class="lletra" maxlength="1" />
@@ -30,13 +30,13 @@
         <hr id="linea" />
 
         <div class="detalles">
-          <p class="pista text-day">Pista: <span></span></p>
-          <p class="restantes text-day">Intentos restantes: <span></span></p>
-          <p class="letrasErroneas text-day">Letras erroneas: <span></span></p>
+          <p tabindex="1" class="pista text-day">Pista: <span></span></p>
+          <p tabindex="1" class="restantes text-day">Intentos restantes: <span></span></p>
+          <p tabindex="1" class="letrasErroneas text-day">Letras erroneas: <span></span></p>
         </div>
         <div class="mostra"></div>
         <div id="boton">
-          <button class="reset-btn">Adivinar Palabra</button>
+          <button tabindex="1" class="reset-btn" title="Volver a jugar">Volver a jugar</button>
         </div>
       </div>
     </main>

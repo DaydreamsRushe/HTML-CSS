@@ -18,7 +18,6 @@ let textfont = 16;
 let paddingtext = 0;
 let palabra = "";
 let pista = "";
-let mensaje = new Array();
 
 const adivina = () => {
   rand = Math.floor(Math.random() * 19);
@@ -97,15 +96,17 @@ const juega = (e) => {
     }
   }
   if (win) {
+    let ran = Math.floor(Math.random() * 6);
     mensaje = [...msg];
     displayRestantes.innerHTML = "Haz click en Volver a empezar";
     displayErrores.innerHTML = "Has ganado";
-    displayFinal.innerHTML = `${mensaje[Math.floor(Math.random() * 6)]}`;
+    displayFinal.innerHTML = `${msg[ran].primero}${palabra}${msg[ran].segundo}`;
     displayFinal.style.color = "green";
   }
   if (lost) {
+    let ran = Math.floor(Math.random() * 6);
     displayErrores.innerHTML = "No tienes mas intentos";
-    displayFinal.innerHTML = `${msgError[Math.floor(Math.random() * 6)]}`;
+    displayFinal.innerHTML = `${msgError[ran].primero}${palabra}${msgError[ran].segundo}`;
     displayFinal.style.color = "red";
   }
 };
