@@ -29,6 +29,11 @@ sessionStorage: Muere al cerrar la pestaña
 
 */
 
+localStorage.setItem("now", Date.now());
+localStorage.getItem("now");
+console.log("now");
+/* localStorage.removeItem("now") */
+
 const boton = document.querySelector("#grabar");
 const indice = document.querySelector("#clave");
 const val = document.querySelector("#texto");
