@@ -1,0 +1,73 @@
+<!Doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+        integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Contacta con nosotros</h1>
+        <form method="post" id="firstContact" name="firstContact" action="envio.php">
+            <fieldset class="form-group">
+                <label for="email">Dirección de email</label>
+                <input type="text" class="form-control" id="email" name="email" value="">
+                <small id="mostra1" class="text-muted"></small>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="asunto">Asunto</label>
+                <input type="text" class="form-control" id="asunto" name="asunto" value="">
+                <small id="mostra2" class="text-muted"></small>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="miedad">Fecha de nacimiento:</label>
+                <input type="date" id="miedad" name="miedad" class="form-control" value="">
+                <small id="mostra3" class="text-muted"></small>
+            </fieldset>
+<!--             <fieldset class="form-group">
+                  <label for="Nacimiento">Nacimiento</label>
+                  <input class="form-control" name="dia" type="number"
+                  />
+                  <input class="form-control" name="mes" type="number"
+                  />
+                  <input class="form-control" name="año" type="number"
+                  />
+                  <small id="mostra3" class="text-muted"></small>
+            </fieldset> -->
+            <fieldset class="form-group">
+                <label for="dni">Dni</label>
+                <input type="text" class="form-control" id="dni" name="dni" value="">
+                <small id="mostra4" class="text-muted"></small>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="contenido">¿Qué te gustaría preguntarnos?</label>
+                <textarea class="form-control" id="contenido" name="contenido" rows="3" value=""></textarea>
+                <small id="mostra5" class="text-muted"></small>
+            </fieldset>
+            <fieldset class="form-group">
+                <label for="acepto">Acepto las condiciones del servicio</label>
+                <input type="checkbox" name="acepto" id="check" />
+                <small id="mostra6" class="text-muted"></small>
+            </fieldset>
+            <div id="error">
+            </div>
+            <button type="submit" name="enviar" id="enviar" class="btn btn-primary">Enviar</button>
+            <button type="button" name=" borrar" id="borrar" class="btn btn-secondary">Borrar formulario</button>
+            <button id="guardar" class="btn btn-warning" name="guardar" type="button">Guardar datos</button>
+            <button id="mostrar" class="btn btn-alert" name="mostrar" type="button">Recuperar datos</button>
+        </form>
+
+    </div>
+    <script src="js/validadoreitor2025cookiesv2.js"></script>
+</body>
+
+</html>
