@@ -1,0 +1,123 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+*,
+*::after,
+*::before,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.day {
+  background-color: rgb(255, 255, 255);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  padding: 20px 0;
+  background-color: black;
+  border-bottom: 4px green solid;
+  border-top: 4px green solid;
+}
+
+header > h1 {
+  color: bisque;
+}
+
+.controls > button {
+  width: 35px;
+  height: 35px;
+  border: gray solid 2px;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: bisque;
+  font-size: 16px;
+  font-weight: bold;
+  align-content: center;
+  justify-content: center;
+}
+
+.controls > button:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.controls > button:active {
+  background-color: rgb(128, 100, 67);
+  color: black;
+}
+
+#mostra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: solid 2px rgba(143, 188, 143, 0.7);
+  border-top: none;
+}
+
+#num_opciones {
+  display: flex;
+  width: 80%;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+p {
+  margin: 10px;
+  font-size: 16px;
+  color: bisque;
+}
+
+p.text-day {
+  color: black;
+}
+
+#num_opciones {
+  display: flex;
+}
+
+button {
+  margin: 5px;
+  background-color: darkgreen;
+  color: white;
+  border-radius: 0;
+  padding: 10px;
+}
+
+button:focus {
+  border: solid 1px red;
+}
+
+button:disabled,
+button:active {
+  background-color: grey;
+}

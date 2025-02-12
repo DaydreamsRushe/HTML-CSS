@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/formulari.css" />
+    <title>Formulario T4</title>
+  </head>
+  <body>
+    <main>
+      <h1>Ejercicio T4: Formulario y Eventos</h1>
+      <p>
+        - Utilitzeu JavaScript per gestionar els formularis i els seus valors.
+        <br />
+        - Utilitzar galetes per emmagatzemar informació.
+      </p>
+      <form
+        method="get"
+        id="firstContact"
+        name="firstContact"
+        action="https://dominio.com/envio.php"
+      >
+        <article id="usuario">
+          <label for="nombre">Usuario:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            class="form-control"
+            placeholder="inputNombre"
+            value=""
+            pattern="^[A-ZÀ]{1}[a-zA-ZÀ-ÿ\u00f1\u00d1\s]{2,40}$"
+          />
+        </article>
+        <article id="telefono">
+          <label for="telef">Telefono:</label>
+          <input
+            type="text"
+            id="telef"
+            name="telef"
+            class="form-control"
+            placeholder="inputTelef"
+            value=""
+            pattern="\d{9,11}"
+          />
+        </article>
+        <article class="nacimiento">
+          <span>Fecha de Nacimiento</span>
+          <label for="dia">dia:</label>
+          <input
+            type="number"
+            id="dia"
+            name="dia"
+            min="1"
+            max="31"
+            class="form-control"
+            value=""
+          />
+          <label for="mes">mes:</label>
+          <input
+            type="number"
+            id="mes"
+            name="mes"
+            min="1"
+            max="12"
+            class="form-control"
+            value=""
+          />
+          <label for="ano">Año:</label>
+          <input
+            type="number"
+            id="ano"
+            name="ano"
+            min="1800"
+            max="9999"
+            class="form-control"
+            value=""
+          />
+        </article>
+        <article class="email">
+          <label for="correo">Email:</label>
+          <input
+            type="text"
+            id="correo"
+            name="correo"
+            class="form-control"
+            value=""
+            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z0-9_]{2,5}"
+          />
+        </article>
+        <article class="dni">
+          <label for="identif">DNI:</label>
+          <input
+            type="text"
+            id="identif"
+            name="identif"
+            class="form-control"
+            value=""
+            patter="/^[XYZ]?\d{5,8}[A-Z]{1}$/"
+          />
+        </article>
+        <article class="acepta">
+          <label for="condiciones">Acepto las condiciones</label>
+          <input type="checkbox" id="condiciones" name="condiciones" />
+        </article>
+        <div class="control">
+          <button type="submit" name="btn_registo" id="btn_registo">
+            Regístrate
+          </button>
+          <button type="button" name="btn_limpiar" id="btn_limpiar">
+            Limpia el formulario
+          </button>
+          <button type="button" name="btn_guardar" id="btn_guardar">
+            Guardar datos
+          </button>
+          <button type="button" name="btn_recuperar" id="btn_recuperar">
+            Recuperar datos
+          </button>
+        </div>
+        <textarea
+          id="informe"
+          class="informe"
+          name="informe"
+          value=""
+        ></textarea>
+      </form>
+    </main>
+    <script src="js/formulari.js"></script>
+  </body>
+</html>

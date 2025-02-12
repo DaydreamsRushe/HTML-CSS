@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: pink;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-top: 20px;
+  background-color: white;
+  width: 90%;
+  height: 80%;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+}
+
+form {
+  justify-self: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  align-self: center;
+  margin: 20px;
+}
+
+p {
+  margin: 10px;
+}
+
+article {
+  margin: 20px;
+}
+
+input {
+  border: solid 1px black;
+  border-radius: 0.2cap;
+}
+
+.control {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.informe {
+  width: 80%;
+  height: 100px;
+  margin: 10px;
+}

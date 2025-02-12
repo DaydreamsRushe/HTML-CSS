@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/adivinaMio.css" />
+    <link rel="stylesheet" href="fontello-73614873/css/fontello.css" />
+    <title>Adivina un número</title>
+  </head>
+
+  <body class="day">
+    <header>
+      <h1>Adivina en número que he pensado</h1>
+      <div aria-label="Accessibility buttons" class="controls">
+        <button
+          tabindex="1"
+          id="contrast"
+          class="contrast"
+          title="Cambiar contraste"
+        >
+          <i class="icon-adjust"></i>
+        </button>
+        <button tabindex="1" id="fontDown" title="Letra mas pequeña">
+          A<sup>-</sup>
+        </button>
+        <button tabindex="1" id="fontUp" title="Letra mas grande">
+          A<sup>+</sup>
+        </button>
+      </div>
+    </header>
+    <div id="mostra"></div>
+    <div id="bienvenido"></div>
+
+    <script src="js/adivinaMio.js"></script>
+  </body>
+</html>
