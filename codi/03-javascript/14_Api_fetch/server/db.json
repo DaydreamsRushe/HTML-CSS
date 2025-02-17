@@ -1,0 +1,262 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Antonio",
+      "empresa": "Sares",
+      "puesto": "Co-OO"
+    },
+    {
+      "id": 2,
+      "nombre": "Antonio",
+      "empresa": "Los Palotes",
+      "puesto": "Co-Feo"
+    },
+    {
+      "id": 3,
+      "nombre": "Raul",
+      "empresa": "Los Palotes",
+      "puesto": "CoO"
+    },
+    {
+      "id": 4,
+      "nombre": "Marcela",
+      "empresa": "Los Palotes",
+      "puesto": "Inka"
+    },
+    {
+      "id": 5,
+      "nombre": "Toreto",
+      "empresa": "El Rápido",
+      "puesto": "Paya"
+    },
+    {
+      "id": 6,
+      "nombre": "Fernandito",
+      "empresa": "El lento",
+      "puesto": "desocupado"
+    },
+    {
+      "id": 7,
+      "nombre": "Septimano",
+      "empresa": "El católico",
+      "puesto": "Paya"
+    },
+    {
+      "id": 8,
+      "nombre": "ectoniano",
+      "empresa": "Pelocho",
+      "puesto": "Paya"
+    },
+    {
+      "id": 9,
+      "nombre": "novenisco",
+      "empresa": "cassismo",
+      "puesto": "COO"
+    },
+    {
+      "id": 11,
+      "nombre": "chungo",
+      "empresa": "sera",
+      "puesto": "COO"
+    },
+    {
+      "id": 12,
+      "nombre": "quesera",
+      "empresa": "sera",
+      "puesto": "la vida pasar"
+    },
+    {
+      "id": 13,
+      "nombre": "tete",
+      "empresa": "meme",
+      "puesto": "ha"
+    },
+    {
+      "id": 14,
+      "nombre": "Septimano",
+      "empresa": "El religioso",
+      "puesto": "Paya"
+    },
+    {
+      "id": 15,
+      "nombre": "Septimano",
+      "empresa": "El católico",
+      "puesto": "Paya"
+    },
+    {
+      "id": 16,
+      "nombre": "Antonio",
+      "empresa": "Los Palotes",
+      "puesto": "Co-Feo"
+    },
+    {
+      "id": 17,
+      "nombre": "Federico",
+      "empresa": "Los Palotes",
+      "puesto": "Inka"
+    },
+    {
+      "id": 18,
+      "nombre": "Bertantonio",
+      "empresa": "Los Palotes",
+      "puesto": "Co-Feo"
+    },
+    {
+      "id": 19,
+      "nombre": "hhhrtantonio",
+      "empresa": "Los Palotes",
+      "puesto": "Co-Feo"
+    },
+    {
+      "id": 20,
+      "nombre": "Eduardo",
+      "empresa": "rr",
+      "puesto": "rrr"
+    },
+    {
+      "id": 21,
+      "nombre": "Periquito",
+      "empresa": "Alamos",
+      "puesto": "cosas"
+    },
+    {
+      "id": 22,
+      "nombre": "rrr",
+      "empresa": "rrr",
+      "puesto": "rrr"
+    },
+    {
+      "id": 23,
+      "nombre": "yyy",
+      "empresa": "yyy",
+      "puesto": "yyy"
+    },
+    {
+      "id": 24,
+      "nombre": "ttt",
+      "empresa": "ttt",
+      "puesto": "ttt"
+    },
+    {
+      "id": 25,
+      "nombre": "www",
+      "empresa": "tttyy",
+      "puesto": "yyyy"
+    },
+    {
+      "id": 26,
+      "nombre": "ytytr",
+      "empresa": "tyrty",
+      "puesto": "tyrytr"
+    },
+    {
+      "id": 27,
+      "nombre": "erer",
+      "empresa": "erere",
+      "puesto": "errer"
+    },
+    {
+      "id": 28,
+      "nombre": "jajaj",
+      "empresa": "jajaja",
+      "puesto": "jajaja"
+    },
+    {
+      "id": 29,
+      "nombre": "Eduardo",
+      "empresa": "weew",
+      "puesto": "wewe"
+    },
+    {
+      "id": 30,
+      "nombre": "werr",
+      "empresa": "fsgfgdfg",
+      "puesto": "fgdfgf"
+    },
+    {
+      "id": 31,
+      "nombre": "dfsfdsffdsfsfdsf",
+      "empresa": "dsfdsfdsfeewwr54",
+      "puesto": "453545erfds"
+    },
+    {
+      "id": 32,
+      "nombre": "dafdfdf",
+      "empresa": "dfdsf",
+      "puesto": "dsfsdfdsf"
+    },
+    {
+      "id": 33,
+      "nombre": "errew",
+      "empresa": "erwerer",
+      "puesto": "reewrewr"
+    },
+    {
+      "id": 34,
+      "nombre": "er",
+      "empresa": "ttttttttttttt",
+      "puesto": "rr"
+    },
+    {
+      "id": 35,
+      "nombre": "ee",
+      "empresa": "ttttttttttttt",
+      "puesto": "rrrrr"
+    },
+    {
+      "id": 36,
+      "nombre": "ttt",
+      "empresa": "yyy",
+      "puesto": "uuu"
+    },
+    {
+      "id": 37,
+      "nombre": "eefe",
+      "empresa": "ererr",
+      "puesto": "rerer"
+    },
+    {
+      "id": 38,
+      "nombre": "uu",
+      "empresa": "uuu",
+      "puesto": "uuuu"
+    },
+    {
+      "id": 39,
+      "nombre": "fff",
+      "empresa": "fff",
+      "puesto": "fff"
+    },
+    {
+      "id": 40,
+      "nombre": "rrr",
+      "empresa": "yyyuuu",
+      "puesto": "uuu"
+    },
+    {
+      "id": 41,
+      "nombre": "jjjjj",
+      "empresa": "kjgfhgkh",
+      "puesto": "nnnnn"
+    },
+    {
+      "id": 42,
+      "nombre": "yfiuytiy",
+      "empresa": "iytfiytft",
+      "puesto": "fiytfityf"
+    },
+    {
+      "id": 43,
+      "nombre": "76576",
+      "empresa": "7965976",
+      "trabajo": "976597"
+    },
+    {
+      "id": 44,
+      "nombre": "76576",
+      "empresa": "7965976",
+      "trabajo": "976597"
+    }
+  ]
+}

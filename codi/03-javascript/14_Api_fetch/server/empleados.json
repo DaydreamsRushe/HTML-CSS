@@ -1,0 +1,24 @@
+[{
+        "id": 1,
+        "nombre": "Perico",
+        "empresa": "Los Palotes",
+        "puesto": "Co-Feo"
+},
+{
+        "id": 2,
+        "nombre": "Antonio",
+        "empresa": "Los Palotes",
+        "puesto": "Co-Feo"
+},
+{
+        "id": 3,
+        "nombre": "Raul",
+        "empresa": "Los Palotes",
+        "puesto": "CoO"
+},
+{
+        "id": 4,
+        "nombre": "Federico",
+        "empresa": "Los Palotes",
+        "puesto": "Inka"
+}]

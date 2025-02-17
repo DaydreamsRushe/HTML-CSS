@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <title>Rick and Morty API</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+            body {
+                  font-family: sans-serif;
+            }
+
+            h1 {
+                  text-align: center;
+            }
+
+            .card-container {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+            }
+
+            .card {
+                  width: 200px;
+                  margin: 10px;
+                  padding: 10px;
+                  border: 1px solid #ccc;
+                  border-radius: 5px;
+                  text-align: center;
+            }
+
+            .card img {
+                  width: 150px;
+                  height: 150px;
+                  object-fit: cover;
+                  border-radius: 50%;
+                  margin-bottom: 10px;
+            }
+
+            .card h3 {
+                  margin: 0;
+            }
+      </style>
+</head>
+
+<body>
+      <h1>Rick and Morty API</h1>
+      <input type="text" id="search" placeholder="Buscar personaje">
+      <div id="characters" class="card-container">
+      </div>
+
+      <script>
+            const getCharacters = async (page) => {
+                  const response = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
+                  const data = await response.json();
+                  return data;
+            };
+
+            const renderCharacters = (characters) => {
+                  const cardContainer = document.getElementById('characters');
+                  for (const character of characters) {
+                        const card = document.createElement('div');
+                        card.className = 'card';
+
+                        const image = document.createElement('img');
+                        image.src = character.image;
+
+                        const name = document.createElement('h3');
+                        name.innerText = character.name;
+
+                        card.appendChild(image);
+                        card.appendChild(name);
+                        cardContainer.appendChild(card);
+                  }
+            };
+
+            let currentPage = 1;
+
+            const loadMoreCharacters = () => {
+                  currentPage++;
+                  getCharacters(currentPage).then((data) => {
+                        renderCharacters(data.results);
+                  });
+            };
+
+            const searchCharacters = () => {
+                  const searchInput = document.getElementById('search');
+                  const searchTerm = searchInput.value.toLowerCase();
+
+                  getCharacters(1).then((data) => {
+                        const filteredCharacters = data.results.filter((character) =>
+                              character.name.toLowerCase().includes(searchTerm)
+                        );
+                        renderCharacters(filteredCharacters);
+                  });
+            };
+
+            document.addEventListener('DOMContentLoaded', () => {
+                  getCharacters(currentPage).then((data) => {
+                        renderCharacters(data.results);
+                  });
+
+                  const searchInput = document.getElementById('search');
+                  searchInput.addEventListener('input', searchCharacters);
+
+                  window.addEventListener('scroll', () => {
+                        if (
+                              window.innerHeight + window.scrollY >= document.body.offsetHeight &&
+                              currentPage < 34
+                        ) {
+                              loadMoreCharacters();
+                        }
+                  });
+            });
+      </script>
+</body>
+
+</html>
