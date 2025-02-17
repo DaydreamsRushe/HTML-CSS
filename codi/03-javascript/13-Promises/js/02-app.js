@@ -26,6 +26,12 @@ const iniciarInfiernoCallback = () => {
           setTimeout(() => {
             nuevoPais("Galia", mostrarPaises);
           }, 1000);
+          setTimeout(() => {
+            nuevoPais("Britania", mostrarPaises);
+          }, 5000);
+          setTimeout(() => {
+            nuevoPais("Helvetia", mostrarPaises);
+          }, 2000);
         }, 3000);
       }, 6000);
     }, 1000); // Después de .... segundos obtenemos los paises...

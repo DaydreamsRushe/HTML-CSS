@@ -10,6 +10,17 @@ console.log(nombreCliente, ahorro); */
 const cliente = mostrarDatos(nombreCliente, ahorro); //incluimos una funcion
 console.log(cliente); */
 import { nombreCliente, ahorro, Cliente } from "./cliente.js";
+import { Empresa } from "./empresa.js";
+
 const nuevoCliente = new Cliente(nombreCliente, ahorro);
+
 console.log(nuevoCliente.mostrarDatos());
+console.log(nuevoCliente);
+console.log(nuevoCliente.nombre);
 console.log(nuevoCliente.ahorro);
+
+let nombeEmpresa = "international Holding de masticadores de chicle",
+  ahorroEmpresa = 2222222222,
+  categoriaEmpresa = "Construccion";
+let empresa = new Empresa(nombeEmpresa, ahorroEmpresa, categoriaEmpresa);
+console.log(empresa.mostrarInformación());
