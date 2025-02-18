@@ -1,6 +1,6 @@
-const btnRandomUser = document.querySelector("#btn5");
-const mostra = document.querySelector("#contenido");
-
+export const btnRandomUser = document.querySelector("#btn5");
+/* const mostra = document.querySelector("#contenido"); */
+import { mostra } from "./texto.js";
 const musr = (users) => {
   mostra.innerHTML = "";
   let html = "";
@@ -17,7 +17,7 @@ const musr = (users) => {
   });
 };
 
-const obDatosUser = () => {
+export const obtenerDatos = () => {
   fetch("https://randomuser.me/api/?results=50")
     .then((response) => {
       if (!response.ok) throw new Error("error en la solicitud");
@@ -33,4 +33,4 @@ const obDatosUser = () => {
     });
 };
 
-btnRandomUser.addEventListener("click", obDatosUser);
+/* btnRandomUser.addEventListener("click", obtenerDatos); */

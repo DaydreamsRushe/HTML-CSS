@@ -1,6 +1,6 @@
-const btnPicsum = document.querySelector("#btn4");
-const mostra = document.querySelector("#contenido");
-
+export const btnPicsum = document.querySelector("#btn4");
+/* const mostra = document.querySelector("#contenido"); */
+import { mostra } from "./texto.js";
 const mHTML = (datos) => {
   mostra.innerHTML = "";
   let html = "";
@@ -13,7 +13,7 @@ const mHTML = (datos) => {
   mostra.innerHTML = html;
 };
 
-const obDatos = () => {
+export const obtenerDatos = () => {
   fetch("./server/dbpictures.json")
     .then((response) => {
       if (!response.ok) throw new Error("error en la solicitud");
@@ -29,4 +29,4 @@ const obDatos = () => {
     });
 };
 
-btnPicsum.addEventListener("click", obDatos);
+/* btnPicsum.addEventListener("click", obtenerDatos); */

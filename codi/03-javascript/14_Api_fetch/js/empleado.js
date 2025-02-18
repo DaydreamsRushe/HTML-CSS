@@ -1,5 +1,6 @@
-const cargarJsonBtn = document.querySelector("#btn2");
+export const cargarJsonBtn = document.querySelector("#btn2");
 /* const mostra = document.querySelector("#contenido"); */
+import { mostra } from "./texto.js";
 
 const mostrarHTML = (resultado) => {
   mostra.innerHTML = "";
@@ -12,7 +13,7 @@ const mostrarHTML = (resultado) => {
   mostra.innerHTML = usuario;
 };
 
-const obtenerDatos = () => {
+export const obtenerDatos = () => {
   fetch("./server/empleado.json")
     .then((response) => {
       console.log(response);
@@ -31,4 +32,4 @@ const obtenerDatos = () => {
     });
 };
 
-cargarJsonBtn.addEventListener("click", obtenerDatos);
+/* cargarJsonBtn.addEventListener("click", obtenerDatos); */

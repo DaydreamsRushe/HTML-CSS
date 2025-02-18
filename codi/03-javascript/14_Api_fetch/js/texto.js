@@ -1,7 +1,7 @@
-const btn1 = document.querySelector("#btn1");
-const mostra = document.querySelector("#contenido");
+export const btn1 = document.querySelector("#btn1");
+export const mostra = document.querySelector("#contenido");
 
-const obtenerTexto = () => {
+export const obtenerTexto = () => {
   fetch("./server/data.txt")
     .then((response) => {
       console.log(response);
@@ -10,7 +10,7 @@ const obtenerTexto = () => {
     })
     .then((datos) => {
       console.log(datos);
-      const mostra = document.querySelector("#contenido");
+      /* const mostra = document.querySelector("#contenido"); */
       mostra.innerHTML = datos;
     })
     .catch((error) => {
@@ -18,4 +18,4 @@ const obtenerTexto = () => {
     });
 };
 
-btn1.addEventListener("click", obtenerTexto);
+/* btn1.addEventListener("click", obtenerTexto); */

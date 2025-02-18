@@ -1,6 +1,6 @@
-const cargarJsonPorid = document.querySelector("#btn6");
+export const cargarJsonPorid = document.querySelector("#btn6");
 /* const mostra = document.querySelector("#contenido"); */
-
+import { mostra } from "./texto.js";
 const mostrarHTML3 = (resultado) => {
   mostra.innerHTML = `
     <p>Empleado: ${resultado.nombre}</p>
@@ -10,7 +10,7 @@ const mostrarHTML3 = (resultado) => {
   `;
 };
 
-const obtenerDatos3 = (id) => {
+export const obtenerDatos = (id) => {
   fetch("./server/empleados.json")
     .then((response) => {
       if (!response.ok) throw new Error("Error en la solicitud");
@@ -26,4 +26,4 @@ const obtenerDatos3 = (id) => {
     });
 };
 
-cargarJsonPorid.addEventListener("click", () => obtenerDatos3(2));
+/* cargarJsonPorid.addEventListener("click", () => obtenerDatos(2)); */

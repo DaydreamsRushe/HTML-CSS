@@ -1,6 +1,6 @@
-const cargarJsonArrayBtn = document.querySelector("#btn3");
+export const cargarJsonArrayBtn = document.querySelector("#btn3");
 /* const mostra = document.querySelector("#contenido"); */
-
+import { mostra } from "./texto.js";
 const mostrarHTML2 = (resultado) => {
   mostra.innerHTML += "<br>";
   const usuario = `
@@ -12,7 +12,7 @@ const mostrarHTML2 = (resultado) => {
   mostra.innerHTML += usuario;
 };
 
-const obtenerDatos2 = () => {
+export const obtenerDatos = () => {
   fetch("./server/empleados.json")
     .then((response) => {
       if (!response.ok) throw new Error("Error en la solicitud");
@@ -36,4 +36,4 @@ const obtenerDatos2 = () => {
     });
 };
 
-cargarJsonArrayBtn.addEventListener("click", obtenerDatos2);
+/* cargarJsonArrayBtn.addEventListener("click", obtenerDatos); */
