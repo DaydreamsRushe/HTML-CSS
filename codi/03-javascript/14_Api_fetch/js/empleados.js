@@ -15,6 +15,7 @@ const mostrarHTML2 = (resultado) => {
 const obtenerDatos2 = () => {
   fetch("./server/empleados.json")
     .then((response) => {
+      if (!response.ok) throw new Error("Error en la solicitud");
       console.log(response);
       console.log(response.type);
       console.log(response.headers.get("Content-Type"));
@@ -25,6 +26,7 @@ const obtenerDatos2 = () => {
     })
     .then((response) => {
       mostra.innerHTML = "";
+      console.log(response);
       for (let i = 0; i < response.length; i++) {
         mostrarHTML2(response[i]);
       }
