@@ -1,6 +1,7 @@
 export const btnRandomUser = document.querySelector("#btn5");
 /* const mostra = document.querySelector("#contenido"); */
 import { mostra } from "./texto.js";
+
 const musr = (users) => {
   mostra.innerHTML = "";
   let html = "";

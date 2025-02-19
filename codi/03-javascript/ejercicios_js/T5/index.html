@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/weather.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>¿Qué tiempo hace hoy?</h1>
+      <div id="contenido">
+        <p>Introduce País y Ciudad para ver el Tiempo de Hoy</p>
+      </div>
+      <select name="countries" id="countries">
+        <option value="">-- Selecciona un país --</option>
+        <option value="es">España</option>
+        <option value="fr">Francia</option>
+        <option value="pt">Portugal</option>
+        <option value="de">Alemania</option>
+      </select>
+      <input type="text" name="city" id="city" />
+      <button type="button" id="btn">Obtener el tiempo de Hoy</button>
+      <div id="error"></div>
+    </main>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
