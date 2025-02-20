@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="usuarios" class="btn" type="button">
+      Cargar listado de empleados
+    </button>
+    <div id="contenido"></div>
+    <template id="form-template">
+      <form id="crud-form">
+        <input type="hidden" name="id" />
+        <input type="text" name="nombre" placeholder="nombre" required />
+        <input type="text" name="empresa" placeholder="empresa" required />
+        <input type="text" name="puesto" placeholder="puesto" required />
+        <input type="submit" value="actualizar" />
+      </form>
+      <table id="tableta">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Empresa</th>
+            <th>Puesto</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </template>
+    <template id="crud-template">
+      <tr>
+        <td class="id"></td>
+        <td class="name"></td>
+        <td class="empresa"></td>
+        <td class="puesto"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Eliminar</button>
+        </td>
+      </tr>
+    </template>
+    <script src="js/script.js"></script>
+  </body>
+</html>
