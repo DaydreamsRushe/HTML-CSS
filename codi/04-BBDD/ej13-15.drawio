@@ -1,188 +1,188 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.16 Chrome/132.0.6834.196 Electron/34.2.0 Safari/537.36" version="26.0.16">
   <diagram name="Pàgina-1" id="yEMHNPGpOhxS75z7taGa">
-    <mxGraphModel dx="2389" dy="917" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1932" dy="902" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="DbsADidffFFlrL_jvsrq-1" value="Ejercicio 13:&lt;div&gt;&lt;div&gt;Una empresa situada en diferents edificis desitja registrar la distribució dels seus departaments. Un departament&lt;/div&gt;&lt;div&gt;pot estar distribuït en diferents edificis. Del departament tenim el seu nom, nombre d’empleats que l’integren.&lt;/div&gt;&lt;div&gt;Dels edificis coneixem el seu nom, nombre de despatxos que té, polígon industrial i ciutat on està ubicat. A cada&lt;/div&gt;&lt;div&gt;edifici pot ubicar-se diferents departaments. Per això volem controlar el nombre de despatxos que cada&lt;/div&gt;&lt;div&gt;departament té a cada edifici.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-1" value="Ejercicio 13:&lt;div&gt;&lt;div&gt;Una empresa situada en diferents edificis desitja registrar la distribució dels seus departaments. Un departament&lt;/div&gt;&lt;div&gt;pot estar distribuït en diferents edificis. Del departament tenim el seu nom, nombre d’empleats que l’integren.&lt;/div&gt;&lt;div&gt;Dels edificis coneixem el seu nom, nombre de despatxos que té, polígon industrial i ciutat on està ubicat. A cada&lt;/div&gt;&lt;div&gt;edifici pot ubicar-se diferents departaments. Per això volem controlar el nombre de despatxos que cada&lt;/div&gt;&lt;div&gt;departament té a cada edifici.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="60" width="730" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-2" target="DbsADidffFFlrL_jvsrq-10">
+        <mxCell id="DbsADidffFFlrL_jvsrq-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-2" target="DbsADidffFFlrL_jvsrq-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-2" value="DEPARTAMENT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-2" value="DEPARTAMENT" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="70" y="240" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-3" target="DbsADidffFFlrL_jvsrq-10">
+        <mxCell id="DbsADidffFFlrL_jvsrq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-3" target="DbsADidffFFlrL_jvsrq-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-3" value="EDIFICI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-3" value="EDIFICI" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="245" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-4" target="DbsADidffFFlrL_jvsrq-3">
+        <mxCell id="DbsADidffFFlrL_jvsrq-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-4" target="DbsADidffFFlrL_jvsrq-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-4" value="nom" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-4" value="nom" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="160" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-5" target="DbsADidffFFlrL_jvsrq-3">
+        <mxCell id="DbsADidffFFlrL_jvsrq-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-5" target="DbsADidffFFlrL_jvsrq-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-5" value="n_despatxos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-5" value="n_despatxos" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="670" y="255" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-6" value="pol_industrial" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-6" value="pol_industrial" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="650" y="360" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-7" target="DbsADidffFFlrL_jvsrq-3">
+        <mxCell id="DbsADidffFFlrL_jvsrq-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-7" target="DbsADidffFFlrL_jvsrq-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-7" value="ciutat" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-7" value="ciutat" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="500" y="370" width="80" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-8" target="DbsADidffFFlrL_jvsrq-2">
+        <mxCell id="DbsADidffFFlrL_jvsrq-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-8" target="DbsADidffFFlrL_jvsrq-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-8" value="nom" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-8" value="nom" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="85" y="340" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-9" target="DbsADidffFFlrL_jvsrq-2">
+        <mxCell id="DbsADidffFFlrL_jvsrq-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-9" target="DbsADidffFFlrL_jvsrq-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-9" value="empleats" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-9" value="empleats" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="85" y="140" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-10" value="distribució" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-10" value="distribució" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="235" width="130" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-13" target="DbsADidffFFlrL_jvsrq-10">
+        <mxCell id="DbsADidffFFlrL_jvsrq-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-13" target="DbsADidffFFlrL_jvsrq-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-13" value="despatxos_dept" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-13" value="despatxos_dept" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="350" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.82;entryY=0.98;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-6" target="DbsADidffFFlrL_jvsrq-3">
+        <mxCell id="DbsADidffFFlrL_jvsrq-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.82;entryY=0.98;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="DbsADidffFFlrL_jvsrq-6" target="DbsADidffFFlrL_jvsrq-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-22" value="Ejercicio 14:&lt;div&gt;&lt;div&gt;El departament de medi ambient ens ha demanat dissenyar una BD amb la següent informació:&lt;/div&gt;&lt;div&gt;- Nom i nombre d’habitants de totes les comunitats autònomes.&lt;/div&gt;&lt;div&gt;- Nom i nombre d’habitants d’algunes ciutats, així com la comunitat autònoma on pertanyen.&lt;/div&gt;&lt;div&gt;- Nom, longitud i caudal d’alguns rius, registrant les ciutats per on passa, així com les comunitats&lt;/div&gt;&lt;div&gt;autònomes que banya i el número de kilòmetres que cada riu passa per cada comunitat autònoma.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-22" value="Ejercicio 14:&lt;div&gt;&lt;div&gt;El departament de medi ambient ens ha demanat dissenyar una BD amb la següent informació:&lt;/div&gt;&lt;div&gt;- Nom i nombre d’habitants de totes les comunitats autònomes.&lt;/div&gt;&lt;div&gt;- Nom i nombre d’habitants d’algunes ciutats, així com la comunitat autònoma on pertanyen.&lt;/div&gt;&lt;div&gt;- Nom, longitud i caudal d’alguns rius, registrant les ciutats per on passa, així com les comunitats&lt;/div&gt;&lt;div&gt;autònomes que banya i el número de kilòmetres que cada riu passa per cada comunitat autònoma.&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="50" y="440" width="590" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-23" target="DbsADidffFFlrL_jvsrq-26">
+        <mxCell id="DbsADidffFFlrL_jvsrq-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-23" target="DbsADidffFFlrL_jvsrq-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-23" target="DbsADidffFFlrL_jvsrq-27">
+        <mxCell id="DbsADidffFFlrL_jvsrq-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-23" target="DbsADidffFFlrL_jvsrq-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-23" value="COMUNITAT AUTONOMA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-23" value="COMUNITAT AUTONOMA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="72.5" y="640" width="125" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-24" target="DbsADidffFFlrL_jvsrq-26">
+        <mxCell id="DbsADidffFFlrL_jvsrq-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-24" target="DbsADidffFFlrL_jvsrq-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-24" target="DbsADidffFFlrL_jvsrq-28">
+        <mxCell id="DbsADidffFFlrL_jvsrq-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-24" target="DbsADidffFFlrL_jvsrq-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-24" value="CIUTAT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-24" value="CIUTAT" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="475" y="640" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-25" target="DbsADidffFFlrL_jvsrq-27">
+        <mxCell id="DbsADidffFFlrL_jvsrq-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-25" target="DbsADidffFFlrL_jvsrq-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-25" value="RIUOUOUO" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-25" value="RIUOUOUO" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="280" y="820" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-26" value="PERTANY" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-26" value="PERTANY" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="284" y="640" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-27" value="banya" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-27" value="banya" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="77.5" y="760" width="115" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-28" target="DbsADidffFFlrL_jvsrq-25">
+        <mxCell id="DbsADidffFFlrL_jvsrq-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-28" target="DbsADidffFFlrL_jvsrq-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="540" y="835" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-28" value="passa" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-28" value="passa" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="485" y="730" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-35" value="km_riu_ca" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-35" value="km_riu_ca" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-90" y="755" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-36" value="&lt;div&gt;Exercici 15:&lt;/div&gt;&lt;div&gt;Ens demanen una BD per a emmagatzemar els articles publicats als diaris regionals, així com els autors que&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;escriuen:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- De cada diari guardarem el seu nom, adreça i telèfon.&lt;/div&gt;&lt;div&gt;- De cada article guardem el títol, nom del fitxer amb el text complet i el tipus d’article (noticia, opinió,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;etc.).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Un mateix article pot estar publicat en diferents diaris i ens interessa enregistrar la data i secció (local,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nacional, societat, etc.). de publicació.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- De cada autor ens interessa conèixer el seu nom, professió (no tots són periodistes), els articles que&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ha escrit i el diari on treballen (si és periodista).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Cada article només està escrit per un autor.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-36" value="&lt;div&gt;Exercici 15:&lt;/div&gt;&lt;div&gt;Ens demanen una BD per a emmagatzemar els articles publicats als diaris regionals, així com els autors que&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;escriuen:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- De cada diari guardarem el seu nom, adreça i telèfon.&lt;/div&gt;&lt;div&gt;- De cada article guardem el títol, nom del fitxer amb el text complet i el tipus d’article (noticia, opinió,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;etc.).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Un mateix article pot estar publicat en diferents diaris i ens interessa enregistrar la data i secció (local,&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;nacional, societat, etc.). de publicació.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- De cada autor ens interessa conèixer el seu nom, professió (no tots són periodistes), els articles que&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ha escrit i el diari on treballen (si és periodista).&lt;/span&gt;&lt;/div&gt;&lt;div&gt;- Cada article només està escrit per un autor.&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry y="870" width="810" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-37" target="DbsADidffFFlrL_jvsrq-41">
+        <mxCell id="DbsADidffFFlrL_jvsrq-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-37" target="DbsADidffFFlrL_jvsrq-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-37" value="DIARI" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-37" value="DIARI" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="72.5" y="1037.5" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-38" value="nom" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-38" value="nom" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="80" y="980" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-39" value="adreça" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-39" value="adreça" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-20" y="990" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-40" value="telefon" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-40" value="telefon" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-90" y="1020" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-41" value="PUBLICACIO" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-41" value="PUBLICACIO" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="286.5" y="1030" width="116" height="45" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-42" target="DbsADidffFFlrL_jvsrq-41">
+        <mxCell id="DbsADidffFFlrL_jvsrq-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-42" target="DbsADidffFFlrL_jvsrq-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-42" value="ARTICLE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-42" value="ARTICLE" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="545" y="1037.5" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-43" value="titol" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-43" value="titol" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="485" y="980" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-44" value="nom_fitxer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-44" value="nom_fitxer" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="610" y="980" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-45" value="tipus" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-45" value="tipus" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="1030" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-48" value="data" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-48" value="data" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="270" y="1120" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-49" value="seccio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-49" value="seccio" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="350" y="1115" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-50" target="DbsADidffFFlrL_jvsrq-55">
+        <mxCell id="DbsADidffFFlrL_jvsrq-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-50" target="DbsADidffFFlrL_jvsrq-55" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-50" value="AUTOR" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-50" value="AUTOR" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="545" y="1220" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-51" value="nom" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-51" value="nom" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="675" y="1240" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-53" value="professio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-53" value="professio" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="670" y="1190" width="90" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-55" target="DbsADidffFFlrL_jvsrq-42">
+        <mxCell id="DbsADidffFFlrL_jvsrq-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-55" target="DbsADidffFFlrL_jvsrq-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-55" value="PUBLICA" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-55" value="ESCRIBE" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="1129" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-58" target="DbsADidffFFlrL_jvsrq-37">
+        <mxCell id="DbsADidffFFlrL_jvsrq-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-58" target="DbsADidffFFlrL_jvsrq-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-58" value="TREBALLA" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-58" value="TREBALLA" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="47" y="1300" width="140" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-61" target="DbsADidffFFlrL_jvsrq-58">
+        <mxCell id="DbsADidffFFlrL_jvsrq-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-61" target="DbsADidffFFlrL_jvsrq-58" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="DbsADidffFFlrL_jvsrq-61" target="DbsADidffFFlrL_jvsrq-50">
+        <mxCell id="DbsADidffFFlrL_jvsrq-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="DbsADidffFFlrL_jvsrq-61" target="DbsADidffFFlrL_jvsrq-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="DbsADidffFFlrL_jvsrq-61" value="PERIODISTA" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="DbsADidffFFlrL_jvsrq-61" value="PERIODISTA" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="540" y="1300" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
